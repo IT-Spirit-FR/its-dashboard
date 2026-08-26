@@ -1,1 +1,37 @@
-
+[
+  {
+    "id": "faq-001",
+    "question": "Qu'est-ce que la cybersécurité industrielle ?",
+    "category": "Cybersécurité",
+    "priority": "high",
+    "active": true
+  },
+  {
+    "id": "faq-002",
+    "question": "Comment choisir une solution de cybersécurité ?",
+    "category": "Cybersécurité",
+    "priority": "high",
+    "active": true
+  },
+  {
+    "id": "faq-003",
+    "question": "Qu'est-ce qu'un SOC ?",
+    "category": "SOC",
+    "priority": "high",
+    "active": true
+  },
+  {
+    "id": "faq-004",
+    "question": "Qu'est-ce que le Zero Trust ?",
+    "category": "Cybersécurité",
+    "priority": "medium",
+    "active": true
+  },
+  {
+    "id": "faq-005",
+    "question": "Comment protéger un système industriel contre les cyberattaques ?",
+    "category": "Cybersécurité industrielle",
+    "priority": "high",
+    "active": true
+  }
+]
