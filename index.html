@@ -1913,7 +1913,30 @@ const AiM = {
     try{
       const res = await fetch('./data/ai-queries.json');
       const data = await res.json();
+const kpi=document.getElementById('ai-kpi-grid');
+if(kpi){
+  kpi.innerHTML=`
+    <div class="kcard">
+      <div class="kt">FAQ suivies</div>
+      <div class="kv">${data.length}</div>
+    </div>
 
+    <div class="kcard">
+      <div class="kt">Google AI</div>
+      <div class="kv">0%</div>
+    </div>
+
+    <div class="kcard">
+      <div class="kt">Gemini</div>
+      <div class="kv">0%</div>
+    </div>
+
+    <div class="kcard">
+      <div class="kt">Visibilité IA</div>
+      <div class="kv">0%</div>
+    </div>
+  `;
+}
       if(!data.length){
         table.innerHTML = `
           <div class="empty">
