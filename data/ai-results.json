@@ -1,4 +1,12 @@
 {
-  "updated_at": "",
-  "results": []
+  "updated_at": "$(date -u +%F)",
+  "results": [
+    {
+      "faq_id": "faq-001",
+      "google_ai": false,
+      "gemini": true,
+      "chatgpt": false,
+      "competitor": ""
+    }
+  ]
 }
