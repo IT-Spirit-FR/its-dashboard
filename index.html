@@ -1905,7 +1905,59 @@ const OVM = {
 // ╔══════════════════════════════════════════════════════════════════════╗
 // ║  PROJECT MODULE                                                      ║
 // ╚══════════════════════════════════════════════════════════════════════╝
-const ProjM = {
+const AiM = {
+  async render(){
+    const table = document.getElementById('ai-faq-table');
+    if(!table) return;
+
+    try{
+      const res = await fetch('./data/ai-queries.json');
+      const data = await res.json();
+
+      if(!data.length){
+        table.innerHTML = `
+          <div class="empty">
+            Aucune FAQ configurée.
+          </div>
+        `;
+        return;
+      }
+
+      table.innerHTML = `
+        <table style="width:100%;border-collapse:collapse">
+          <thead>
+            <tr>
+              <th style="text-align:left;padding:8px">FAQ</th>
+              <th style="text-align:left;padding:8px">Catégorie</th>
+              <th style="text-align:left;padding:8px">Priorité</th>
+              <th style="text-align:left;padding:8px">Google AI</th>
+              <th style="text-align:left;padding:8px">Gemini</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${data.map(f=>`
+              <tr>
+                <td style="padding:8px">${f.question}</td>
+                <td style="padding:8px">${f.category}</td>
+                <td style="padding:8px">${f.priority}</td>
+                <td style="padding:8px">—</td>
+                <td style="padding:8px">—</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    }catch(err){
+      table.innerHTML = `
+        <div style="padding:20px">
+          Erreur de chargement du fichier ai-queries.json
+        </div>
+      `;
+      console.error(err);
+    }
+  }
+};
+  const ProjM = {
   STLBL:{active:'En cours',planned:'Planifié',paused:'En pause',done:'Terminé'},
   STCLS:{active:'st-active',planned:'st-planned',paused:'st-paused',done:'st-done'},
   STCYC:{active:'planned',planned:'paused',paused:'done',done:'active'},
@@ -2251,6 +2303,7 @@ const Nav = {
       rerow:()=>{RRM.render();RRM.renderChart();},
       d2v:()=>{KPIM.renderKG('d2v_instagram');ChartM.renderChart('d2v_instagram');},
       serp:()=>SerpM.render(),
+      ai:()=>AiM.render(),
       projets:()=>ProjM.render(),
     };
     renders[id]&&renders[id]();
