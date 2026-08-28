@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 6 * * 1"
 
+permissions:
+  contents: write
+
 jobs:
   ai-visibility:
     runs-on: ubuntu-latest
@@ -12,6 +15,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
 
       - name: Verify secret
         env:
@@ -23,22 +33,13 @@ jobs:
           fi
           echo "Secret présent"
 
-      - name: Create test result
-        run: |
-          cat > data/ai-results.json << 'EOF'
-          {
-            "updated_at": "$(date -u +%F)",
-            "results": [
-              {
-                "faq_id": "faq-001",
-                "google_ai": false,
-                "gemini": true,
-                "chatgpt": false,
-                "competitor": ""
-              }
-            ]
-          }
-          EOF
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run AI visibility
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run ai-visibility
 
       - name: Commit results
         run: |
@@ -47,7 +48,12 @@ jobs:
 
           git add data/ai-results.json
 
-          git diff --cached --quiet || (
-            git commit -m "Update AI visibility results"
-            git push
-          )
+          if git diff --cached --quiet; then
+            echo "Aucun changement"
+            exit 0
+          fi
+
+          git commit -m "Update AI visibility results"
+
+          git pull --rebase origin main
+          git push origin HEAD:main
