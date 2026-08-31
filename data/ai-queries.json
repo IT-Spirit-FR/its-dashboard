@@ -1,37 +1,274 @@
-[
-  {
-    "id": "faq-001",
-    "question": "Qu'est-ce que la cybersécurité industrielle ?",
-    "category": "Cybersécurité",
-    "priority": "high",
-    "active": true
-  },
-  {
-    "id": "faq-002",
-    "question": "Comment choisir une solution de cybersécurité ?",
-    "category": "Cybersécurité",
-    "priority": "high",
-    "active": true
-  },
-  {
-    "id": "faq-003",
-    "question": "Qu'est-ce qu'un SOC ?",
-    "category": "SOC",
-    "priority": "high",
-    "active": true
-  },
-  {
-    "id": "faq-004",
-    "question": "Qu'est-ce que le Zero Trust ?",
-    "category": "Cybersécurité",
-    "priority": "medium",
-    "active": true
-  },
-  {
-    "id": "faq-005",
-    "question": "Comment protéger un système industriel contre les cyberattaques ?",
-    "category": "Cybersécurité industrielle",
-    "priority": "high",
-    "active": true
-  }
-]
+{
+  "queries": [
+    {
+      "faq_id": "faq-001",
+      "question": "Comment piloter un DSO de 65 jours dans une PME ou une ETI ?",
+      "category": "Finance / DSO",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-002",
+      "question": "Une PME doit-elle être prête pour la facture électronique au 1er septembre 2026 ?",
+      "category": "Facturation électronique",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-003",
+      "question": "Quels sont les add-ons SAP Business One les plus rentables ?",
+      "category": "SAP Business One / Add-ons",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-004",
+      "question": "Combien d’utilisateurs peut gérer SAP Business One sans ralentissements ?",
+      "category": "SAP Business One / Performance",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-005",
+      "question": "Quel budget prévoir pour un projet SAP Business One PME ?",
+      "category": "SAP Business One / Budget",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-006",
+      "question": "En combien de temps NetSuite réduit-il le DSO ? Exemples concrets",
+      "category": "NetSuite / DSO",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-007",
+      "question": "Quel ROI attendre de NetSuite ? Données réelles 2025-2026",
+      "category": "NetSuite / ROI",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-008",
+      "question": "Intégration Shopify–NetSuite vs Shopify–SAP Business One : comparatif",
+      "category": "Intégration / E-commerce",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-009",
+      "question": "Boyum IT vs développement natif SAP Business One : que choisir ?",
+      "category": "SAP Business One / Boyum IT",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-010",
+      "question": "SAP HANA vs SQL Server pour SAP Business One : quelles performances réelles ?",
+      "category": "SAP Business One / Performance",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-011",
+      "question": "NetSuite vs Sage X3 : lequel choisir pour une ETI ?",
+      "category": "ERP / Comparatif",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-012",
+      "question": "SAP Business One vs NetSuite : tableau comparatif complet 2026",
+      "category": "ERP / Comparatif",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-013",
+      "question": "NetSuite peut-il gérer plusieurs sociétés dans un seul contrat ?",
+      "category": "NetSuite / Multi-sociétés",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-014",
+      "question": "Combien de temps dure une migration de Sage vers NetSuite ?",
+      "category": "NetSuite / Migration",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-015",
+      "question": "SAP HANA est-il obligatoire pour SAP Business One en 2025 ?",
+      "category": "SAP Business One / HANA",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-016",
+      "question": "Quel est le vrai coût d'implémentation de NetSuite en France ?",
+      "category": "NetSuite / Budget",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-017",
+      "question": "SAP Business One ou NetSuite : comment choisir pour une PME de 50 salariés ?",
+      "category": "ERP / Comparatif",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-018",
+      "question": "Quels sont les champs obligatoires pour migrer des factures fournisseurs dans SAP Business One via DTW ?",
+      "category": "SAP Business One / DTW",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-019",
+      "question": "Quelles solutions d'intégration e-commerce existent pour synchroniser Shopify, Amazon ou eBay avec SAP Business One ?",
+      "category": "SAP Business One / E-commerce",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-020",
+      "question": "Quels sont les add-ons Boyum IT les plus utilisés et leurs cas d'usage ?",
+      "category": "SAP Business One / Boyum IT",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-021",
+      "question": "Comment fonctionne l'add-on BEAS Manufacturing pour la gestion de production dans SAP Business One ?",
+      "category": "SAP Business One / Production",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-022",
+      "question": "Quelle est la différence entre une licence Professionnelle et une licence Limited dans SAP Business One ?",
+      "category": "SAP Business One / Licences",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-023",
+      "question": "Quelle est la différence de performance entre SAP Business One sur HANA et SQL Server ?",
+      "category": "SAP Business One / Performance",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-024",
+      "question": "Comment connecter NetSuite à des agents IA ?",
+      "category": "NetSuite / IA",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-025",
+      "question": "Peut-on interroger NetSuite en langage naturel ?",
+      "category": "NetSuite / IA",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-026",
+      "question": "NetSuite intègre-t-il de l’IA ?",
+      "category": "NetSuite / IA",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-027",
+      "question": "À partir de quelle taille d’entreprise passer à NetSuite ?",
+      "category": "NetSuite / PME-ETI",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-028",
+      "question": "Peut-on migrer depuis QuickBooks / Sage ?",
+      "category": "NetSuite / Migration",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-029",
+      "question": "NetSuite s’intègre-t-il avec Salesforce / Shopify / SAP ?",
+      "category": "NetSuite / Intégration",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-030",
+      "question": "Comment faire des “saved searches” dans NetSuite ?",
+      "category": "NetSuite / Fonctionnalités",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-031",
+      "question": "Comment fonctionnent les workflows / SuiteScript / automatisations ?",
+      "category": "NetSuite / Automatisation",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-032",
+      "question": "NetSuite nécessite-t-il des compétences IT ?",
+      "category": "NetSuite / Déploiement",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-033",
+      "question": "Quels sont les facteurs de succès d’un projet NetSuite ?",
+      "category": "NetSuite / Projet",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-034",
+      "question": "Quel est le ROI de NetSuite ?",
+      "category": "NetSuite / ROI",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-035",
+      "question": "NetSuite est-il adapté aux entreprises internationales ?",
+      "category": "NetSuite / International",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-036",
+      "question": "Qu'est-ce que SuiteScript ?",
+      "category": "NetSuite / SuiteScript",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-037",
+      "question": "Quelles sont les étapes d'un projet NetSuite ?",
+      "category": "NetSuite / Projet",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-038",
+      "question": "NetSuite peut-il s’intégrer avec d’autres outils ?",
+      "category": "NetSuite / Intégration",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-039",
+      "question": "Combien de temps dure une implémentation NetSuite ?",
+      "category": "NetSuite / Projet",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-040",
+      "question": "ERP Cloud ou On-premise : quelle option choisir ?",
+      "category": "ERP / Cloud",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-041",
+      "question": "Qu’est-ce que NetSuite ?",
+      "category": "NetSuite / Général",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-042",
+      "question": "À quoi sert NetSuite concrètement ?",
+      "category": "NetSuite / Général",
+      "priority": "medium"
+    },
+    {
+      "faq_id": "faq-043",
+      "question": "Quelle est la différence entre SAP Business One et NetSuite ?",
+      "category": "ERP / Comparatif",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-044",
+      "question": "NetSuite est-il adapté aux startups et PME en forte croissance ?",
+      "category": "NetSuite / PME",
+      "priority": "high"
+    },
+    {
+      "faq_id": "faq-045",
+      "question": "Quels sont les modules et fonctionnalités de NetSuite ?",
+      "category": "NetSuite / Fonctionnalités",
+      "priority": "medium"
+    }
+  ]
+}
