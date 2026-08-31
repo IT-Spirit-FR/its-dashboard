@@ -1,3 +1,4 @@
+```javascript
 import { GoogleGenAI } from "@google/genai";
 import fs from "fs";
 
@@ -7,7 +8,7 @@ const RESULTS_FILE = "data/ai-results.json";
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
-  console.error("❌ GEMINI_API_KEY est manquante.");
+  console.error("GEMINI_API_KEY est manquante.");
   process.exit(1);
 }
 
@@ -15,26 +16,17 @@ const ai = new GoogleGenAI({
   apiKey
 });
 
-/**
- * Configuration
- */
-const MODEL = process.env.GEMINI_MODEL || "gemini-3.7-flash";
+const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 const IT_SPIRIT_DOMAINS = [
   "it-spirit.fr",
   "www.it-spirit.fr"
 ];
 
-/**
- * Lecture JSON
- */
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
-/**
- * Normalisation
- */
 function normalize(text = "") {
   return text
     .toLowerCase()
@@ -42,16 +34,6 @@ function normalize(text = "") {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-/**
- * Détection IT Spirit
- *
- * On cherche :
- * - IT Spirit
- * - IT-Spirit
- * - itspirit
- * - it-spirit.fr
- * - it-spirit.fr dans les URLs
- */
 function detectItSpirit(text = "") {
   const normalized = normalize(text);
 
@@ -63,9 +45,31 @@ function detectItSpirit(text = "") {
   );
 }
 
-/**
- * Détection des concurrents / acteurs
- */
+function extractDomain(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
+function isItSpiritUrl(url = "") {
+  const domain = extractDomain(url);
+
+  return IT_SPIRIT_DOMAINS.some(
+    (allowedDomain) =>
+      domain === allowedDomain.replace(/^www\./, "")
+  );
+}
+
+function extractUrls(text = "") {
+  const matches = text.match(/https?:\/\/[^\s)\]>"']+/g);
+
+  return matches
+    ? [...new Set(matches)]
+    : [];
+}
+
 function detectCompetitors(text = "") {
   const competitors = [
     "SAP Business One",
@@ -92,33 +96,6 @@ function detectCompetitors(text = "") {
   );
 }
 
-/**
- * Extraction des URLs présentes dans le texte
- */
-function extractUrls(text = "") {
-  const matches = text.match(/https?:\/\/[^\s)\]>"']+/g);
-
-  return matches
-    ? [...new Set(matches)]
-    : [];
-}
-
-/**
- * Extraction des sources Google retournées par Gemini
- *
- * Gemini renvoie :
- *
- * candidates[0].groundingMetadata.groundingChunks
- *
- * Chaque chunk peut contenir :
- *
- * {
- *   web: {
- *     uri: "...",
- *     title: "..."
- *   }
- * }
- */
 function extractGroundingSources(response) {
   const metadata =
     response?.candidates?.[0]?.groundingMetadata;
@@ -158,9 +135,6 @@ function extractGroundingSources(response) {
     });
   }
 
-  /**
-   * Suppression des doublons
-   */
   const uniqueSources = [
     ...new Map(
       sources.map((source) => [
@@ -176,38 +150,11 @@ function extractGroundingSources(response) {
   };
 }
 
-/**
- * Extraction du domaine
- */
-function extractDomain(url) {
-  try {
-    return new URL(url).hostname
-      .replace(/^www\./, "");
-  } catch {
-    return "";
-  }
-}
-
-/**
- * Vérifie si une URL appartient à IT Spirit
- */
-function isItSpiritUrl(url = "") {
-  const domain = extractDomain(url);
-
-  return IT_SPIRIT_DOMAINS.some(
-    (allowedDomain) =>
-      domain === allowedDomain.replace(/^www\./, "")
-  );
-}
-
-/**
- * Détermine le type de présence IT Spirit
- */
 function detectMentionType(answer, sources) {
   const answerMentioned = detectItSpirit(answer);
 
   const sourceMentioned = sources.some(
-    (source) => source.it_spirit_source
+    (source) => source.it_spirit_source === true
   );
 
   if (answerMentioned && sourceMentioned) {
@@ -225,9 +172,6 @@ function detectMentionType(answer, sources) {
   return "none";
 }
 
-/**
- * Appel Gemini avec Google Search grounding
- */
 async function askGemini(question) {
   const prompt = `
 Tu es un moteur de recherche IA répondant à la question d'un utilisateur.
@@ -235,28 +179,27 @@ Tu es un moteur de recherche IA répondant à la question d'un utilisateur.
 Question utilisateur :
 ${question}
 
-Effectue une recherche Google si elle est utile pour répondre correctement.
+Effectue une recherche sur le Web afin de fournir une réponse réaliste et actuelle.
 
-Réponds comme un véritable moteur de recherche IA :
+Réponds de manière naturelle, précise et informative.
 
-- donne une réponse naturelle, précise et utile ;
+Consignes :
 - utilise les informations trouvées sur le Web ;
-- cite les entreprises, logiciels ou solutions réellement pertinents ;
+- cite les entreprises, logiciels et solutions réellement pertinents ;
 - cite les concurrents ou alternatives lorsque c'est pertinent ;
 - ne force jamais la mention d'une entreprise ;
-- ne mentionne jamais IT Spirit uniquement parce que cette instruction existe ;
-- si IT Spirit est réellement pertinent selon les résultats Web, tu peux le mentionner ;
+- ne mentionne pas IT Spirit simplement parce que cette consigne existe ;
+- si IT Spirit est réellement pertinent dans les résultats Web, tu peux le mentionner ;
 - ne fabrique aucune URL ;
-- privilégie les informations provenant des résultats Google ;
-- ne prétends pas avoir consulté une source qui n'a pas été trouvée.
+- ne prétends pas avoir consulté une source qui n'a pas été trouvée ;
+- privilégie les informations issues des résultats de recherche.
 
-L'objectif est de reproduire au mieux une réponse réaliste qu'un utilisateur pourrait obtenir avec une recherche Google suivie d'une réponse Gemini.
+L'objectif est de reproduire au mieux une réponse réaliste qu'un utilisateur pourrait obtenir d'un moteur de recherche IA utilisant la recherche Web.
 `;
 
   const response = await ai.models.generateContent({
     model: MODEL,
     contents: prompt,
-
     config: {
       tools: [
         {
@@ -269,16 +212,10 @@ L'objectif est de reproduire au mieux une réponse réaliste qu'un utilisateur p
   return response;
 }
 
-/**
- * Analyse d'une FAQ
- */
 async function analyseQuery(query) {
-  const response = await askGemini(
-    query.question
-  );
+  const response = await askGemini(query.question);
 
-  const answer =
-    response?.text || "";
+  const answer = response?.text || "";
 
   const grounding =
     extractGroundingSources(response);
@@ -289,13 +226,15 @@ async function analyseQuery(query) {
   const urls =
     extractUrls(answer);
 
+  const sourceText = sources
+    .map((source) =>
+      `${source.title} ${source.url}`
+    )
+    .join(" ");
+
   const competitors =
     detectCompetitors(
-      `${answer} ${sources
-        .map((source) =>
-          `${source.title} ${source.url}`
-        )
-        .join(" ")}`
+      `${answer} ${sourceText}`
     );
 
   const itSpiritInAnswer =
@@ -311,12 +250,6 @@ async function analyseQuery(query) {
     itSpiritInAnswer ||
     itSpiritInSources;
 
-  const mentionType =
-    detectMentionType(
-      answer,
-      sources
-    );
-
   return {
     faq_id: query.faq_id,
     question: query.question,
@@ -326,7 +259,10 @@ async function analyseQuery(query) {
     gemini: {
       mentioned: itSpiritMentioned,
 
-      mention_type: mentionType,
+      mention_type: detectMentionType(
+        answer,
+        sources
+      ),
 
       mentioned_in_answer:
         itSpiritInAnswer,
@@ -335,12 +271,9 @@ async function analyseQuery(query) {
         itSpiritInSources,
 
       competitors,
-
-      competitor_count:
-        competitors.length,
+      competitor_count: competitors.length,
 
       answer,
-
       urls,
 
       search_queries:
@@ -354,24 +287,9 @@ async function analyseQuery(query) {
   };
 }
 
-/**
- * Programme principal
- */
 async function main() {
-  const data =
-    readJson(QUERIES_FILE);
+  const data = readJson(QUERIES_FILE);
 
-  /**
-   * Supporte :
-   *
-   * {
-   *   "queries": [...]
-   * }
-   *
-   * mais aussi directement :
-   *
-   * [...]
-   */
   const queries =
     Array.isArray(data)
       ? data
@@ -379,9 +297,8 @@ async function main() {
 
   if (!Array.isArray(queries)) {
     console.error(
-      "❌ Format invalide : data/ai-queries.json doit contenir un tableau 'queries'."
+      "Format invalide : data/ai-queries.json doit contenir un tableau queries."
     );
-
     process.exit(1);
   }
 
@@ -392,22 +309,22 @@ async function main() {
     );
 
   console.log(
-    `🔎 ${activeQueries.length} FAQ à analyser`
+    `FAQ à analyser : ${activeQueries.length}`
   );
 
   console.log(
-    `🤖 Modèle Gemini : ${MODEL}`
+    `Modèle Gemini : ${MODEL}`
   );
 
   console.log(
-    `🌐 Google Search grounding : activé`
+    "Google Search grounding : activé"
   );
 
   const results = [];
 
   for (const query of activeQueries) {
     console.log(
-      `\n➡️ ${query.faq_id} : ${query.question}`
+      `\n${query.faq_id} : ${query.question}`
     );
 
     try {
@@ -416,52 +333,47 @@ async function main() {
 
       results.push(result);
 
-      if (
-        result.gemini.mentioned
-      ) {
+      if (result.gemini.mentioned) {
         console.log(
-          "   ✅ IT Spirit détecté"
+          "IT Spirit détecté"
         );
 
         console.log(
-          `   📍 Type : ${result.gemini.mention_type}`
+          `Type : ${result.gemini.mention_type}`
         );
       } else {
         console.log(
-          "   ❌ IT Spirit non détecté"
+          "IT Spirit non détecté"
         );
       }
 
       if (
-        result.gemini.search_queries
-          .length > 0
+        result.gemini.search_queries.length > 0
       ) {
         console.log(
-          `   🔎 Recherches Google : ${result.gemini.search_queries.join(" | ")}`
+          `Recherches : ${result.gemini.search_queries.join(" | ")}`
         );
       }
 
       if (
-        result.gemini.sources
-          .length > 0
+        result.gemini.sources.length > 0
       ) {
         console.log(
-          `   🌐 Sources : ${result.gemini.sources.length}`
+          `Sources : ${result.gemini.sources.length}`
         );
       }
 
       if (
-        result.gemini.competitors
-          .length > 0
+        result.gemini.competitors.length > 0
       ) {
         console.log(
-          `   🏢 Acteurs : ${result.gemini.competitors.join(", ")}`
+          `Acteurs : ${result.gemini.competitors.join(", ")}`
         );
       }
 
     } catch (error) {
       console.error(
-        `   ❌ Erreur Gemini pour ${query.faq_id}`
+        `Erreur Gemini pour ${query.faq_id}`
       );
 
       console.error(
@@ -500,9 +412,6 @@ async function main() {
     }
   }
 
-  /**
-   * KPI principaux
-   */
   const mentionedCount =
     results.filter(
       (result) =>
@@ -518,17 +427,13 @@ async function main() {
         )
       : 0;
 
-  /**
-   * Sources IT Spirit
-   */
   const itSpiritSources =
     results.flatMap(
       (result) =>
-        result.gemini.sources
-          .filter(
-            (source) =>
-              source.it_spirit_source
-          )
+        result.gemini.sources.filter(
+          (source) =>
+            source.it_spirit_source === true
+        )
     );
 
   const uniqueItSpiritSources =
@@ -543,18 +448,12 @@ async function main() {
       ).values()
     ];
 
-  /**
-   * Sources les plus citées
-   */
-  const sourceCounter =
-    {};
+  const sourceCounter = {};
 
   for (const result of results) {
     for (const source of result.gemini.sources) {
-      const key = source.url;
-
-      if (!sourceCounter[key]) {
-        sourceCounter[key] = {
+      if (!sourceCounter[source.url]) {
+        sourceCounter[source.url] = {
           title: source.title,
           url: source.url,
           domain: source.domain,
@@ -562,7 +461,7 @@ async function main() {
         };
       }
 
-      sourceCounter[key].mentions++;
+      sourceCounter[source.url].mentions++;
     }
   }
 
@@ -574,11 +473,7 @@ async function main() {
       )
       .slice(0, 50);
 
-  /**
-   * Concurrents globaux
-   */
-  const competitorCounter =
-    {};
+  const competitorCounter = {};
 
   for (const result of results) {
     for (
@@ -586,15 +481,12 @@ async function main() {
       of result.gemini.competitors
     ) {
       competitorCounter[competitor] =
-        (competitorCounter[competitor] || 0) +
-        1;
+        (competitorCounter[competitor] || 0) + 1;
     }
   }
 
   const competitors =
-    Object.entries(
-      competitorCounter
-    )
+    Object.entries(competitorCounter)
       .map(
         ([name, mentions]) => ({
           name,
@@ -606,9 +498,6 @@ async function main() {
           b.mentions - a.mentions
       );
 
-  /**
-   * Résultat final
-   */
   const output = {
     updated_at:
       new Date().toISOString(),
@@ -649,15 +538,12 @@ async function main() {
     ) + "\n"
   );
 
-  /**
-   * Reporting console
-   */
   console.log(
     "\n================================="
   );
 
   console.log(
-    "📊 AI VISIBILITY"
+    "AI VISIBILITY"
   );
 
   console.log(
@@ -689,13 +575,13 @@ async function main() {
   );
 
   console.log(
-    `\n✅ Résultats enregistrés dans ${RESULTS_FILE}`
+    `Résultats enregistrés dans ${RESULTS_FILE}`
   );
 }
 
 main().catch((error) => {
   console.error(
-    "\n❌ Erreur fatale :"
+    "\nErreur fatale :"
   );
 
   console.error(
