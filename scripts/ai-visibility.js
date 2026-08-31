@@ -1,4 +1,3 @@
-```javascript
 import { GoogleGenAI } from "@google/genai";
 import fs from "fs";
 
@@ -63,9 +62,7 @@ function detectCompetitors(text) {
 }
 
 async function askGemini(question) {
-  const response = await ai.models.generateContent({
-    model: process.env.GEMINI_MODEL || "gemini-3.6-flash",
-    contents: `
+  const prompt = `
 Tu es un moteur de recherche IA répondant à la question d'un utilisateur.
 
 Question :
@@ -81,7 +78,11 @@ Lorsque c'est pertinent :
 - ne mentionne pas IT Spirit simplement parce que la question contient cette consigne.
 
 L'objectif est de reproduire une réponse réaliste qu'un utilisateur pourrait obtenir d'un moteur de recherche IA.
-`
+`;
+
+  const response = await ai.models.generateContent({
+    model: process.env.GEMINI_MODEL || "gemini-3.6-flash",
+    contents: prompt
   });
 
   return response.text || "";
@@ -200,4 +201,3 @@ async function main() {
 }
 
 main();
-```
