@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:10:12.243Z",
-  "model": "gemini-3.6-flash",
+  "updated_at": "2026-08-31T10:57:21.931Z",
+  "model": "gemini-2.5-flash",
   "grounding": {
     "provider": "Google Search",
     "enabled": true
@@ -28,9 +28,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:07.926Z"
+      "checked_at": "2026-08-31T10:57:17.628Z"
     },
     {
       "faq_id": "faq-002",
@@ -48,9 +48,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.039Z"
+      "checked_at": "2026-08-31T10:57:17.738Z"
     },
     {
       "faq_id": "faq-003",
@@ -68,9 +68,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.144Z"
+      "checked_at": "2026-08-31T10:57:17.825Z"
     },
     {
       "faq_id": "faq-004",
@@ -88,9 +88,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.241Z"
+      "checked_at": "2026-08-31T10:57:17.948Z"
     },
     {
       "faq_id": "faq-005",
@@ -108,9 +108,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.372Z"
+      "checked_at": "2026-08-31T10:57:18.030Z"
     },
     {
       "faq_id": "faq-006",
@@ -128,9 +128,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.449Z"
+      "checked_at": "2026-08-31T10:57:18.111Z"
     },
     {
       "faq_id": "faq-007",
@@ -148,9 +148,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.595Z"
+      "checked_at": "2026-08-31T10:57:18.229Z"
     },
     {
       "faq_id": "faq-008",
@@ -168,9 +168,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.675Z"
+      "checked_at": "2026-08-31T10:57:18.306Z"
     },
     {
       "faq_id": "faq-009",
@@ -188,9 +188,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.810Z"
+      "checked_at": "2026-08-31T10:57:18.424Z"
     },
     {
       "faq_id": "faq-010",
@@ -208,9 +208,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:08.896Z"
+      "checked_at": "2026-08-31T10:57:18.506Z"
     },
     {
       "faq_id": "faq-011",
@@ -228,9 +228,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.011Z"
+      "checked_at": "2026-08-31T10:57:18.764Z"
     },
     {
       "faq_id": "faq-012",
@@ -248,9 +248,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.090Z"
+      "checked_at": "2026-08-31T10:57:18.833Z"
     },
     {
       "faq_id": "faq-013",
@@ -268,9 +268,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.193Z"
+      "checked_at": "2026-08-31T10:57:18.968Z"
     },
     {
       "faq_id": "faq-014",
@@ -288,9 +288,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.273Z"
+      "checked_at": "2026-08-31T10:57:19.037Z"
     },
     {
       "faq_id": "faq-015",
@@ -308,9 +308,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.377Z"
+      "checked_at": "2026-08-31T10:57:19.166Z"
     },
     {
       "faq_id": "faq-016",
@@ -328,9 +328,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.456Z"
+      "checked_at": "2026-08-31T10:57:19.238Z"
     },
     {
       "faq_id": "faq-017",
@@ -348,9 +348,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.570Z"
+      "checked_at": "2026-08-31T10:57:19.353Z"
     },
     {
       "faq_id": "faq-018",
@@ -368,9 +368,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.646Z"
+      "checked_at": "2026-08-31T10:57:19.415Z"
     },
     {
       "faq_id": "faq-019",
@@ -388,9 +388,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.760Z"
+      "checked_at": "2026-08-31T10:57:19.553Z"
     },
     {
       "faq_id": "faq-020",
@@ -408,9 +408,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.850Z"
+      "checked_at": "2026-08-31T10:57:19.612Z"
     },
     {
       "faq_id": "faq-021",
@@ -428,9 +428,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:09.967Z"
+      "checked_at": "2026-08-31T10:57:19.752Z"
     },
     {
       "faq_id": "faq-022",
@@ -448,9 +448,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.036Z"
+      "checked_at": "2026-08-31T10:57:19.831Z"
     },
     {
       "faq_id": "faq-023",
@@ -468,9 +468,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.171Z"
+      "checked_at": "2026-08-31T10:57:19.936Z"
     },
     {
       "faq_id": "faq-024",
@@ -488,9 +488,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.233Z"
+      "checked_at": "2026-08-31T10:57:20.006Z"
     },
     {
       "faq_id": "faq-025",
@@ -508,9 +508,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.359Z"
+      "checked_at": "2026-08-31T10:57:20.077Z"
     },
     {
       "faq_id": "faq-026",
@@ -528,9 +528,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.428Z"
+      "checked_at": "2026-08-31T10:57:20.197Z"
     },
     {
       "faq_id": "faq-027",
@@ -548,9 +548,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.564Z"
+      "checked_at": "2026-08-31T10:57:20.274Z"
     },
     {
       "faq_id": "faq-028",
@@ -568,9 +568,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.639Z"
+      "checked_at": "2026-08-31T10:57:20.374Z"
     },
     {
       "faq_id": "faq-029",
@@ -588,9 +588,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.762Z"
+      "checked_at": "2026-08-31T10:57:20.462Z"
     },
     {
       "faq_id": "faq-030",
@@ -608,9 +608,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.835Z"
+      "checked_at": "2026-08-31T10:57:20.558Z"
     },
     {
       "faq_id": "faq-031",
@@ -628,9 +628,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:10.967Z"
+      "checked_at": "2026-08-31T10:57:20.652Z"
     },
     {
       "faq_id": "faq-032",
@@ -648,9 +648,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.028Z"
+      "checked_at": "2026-08-31T10:57:20.745Z"
     },
     {
       "faq_id": "faq-033",
@@ -668,9 +668,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.149Z"
+      "checked_at": "2026-08-31T10:57:20.829Z"
     },
     {
       "faq_id": "faq-034",
@@ -688,9 +688,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.219Z"
+      "checked_at": "2026-08-31T10:57:20.930Z"
     },
     {
       "faq_id": "faq-035",
@@ -708,9 +708,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.350Z"
+      "checked_at": "2026-08-31T10:57:21.027Z"
     },
     {
       "faq_id": "faq-036",
@@ -728,9 +728,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.423Z"
+      "checked_at": "2026-08-31T10:57:21.110Z"
     },
     {
       "faq_id": "faq-037",
@@ -748,9 +748,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.534Z"
+      "checked_at": "2026-08-31T10:57:21.209Z"
     },
     {
       "faq_id": "faq-038",
@@ -768,9 +768,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.647Z"
+      "checked_at": "2026-08-31T10:57:21.291Z"
     },
     {
       "faq_id": "faq-039",
@@ -788,9 +788,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.739Z"
+      "checked_at": "2026-08-31T10:57:21.398Z"
     },
     {
       "faq_id": "faq-040",
@@ -808,9 +808,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.822Z"
+      "checked_at": "2026-08-31T10:57:21.477Z"
     },
     {
       "faq_id": "faq-041",
@@ -828,9 +828,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.910Z"
+      "checked_at": "2026-08-31T10:57:21.569Z"
     },
     {
       "faq_id": "faq-042",
@@ -848,9 +848,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:11.994Z"
+      "checked_at": "2026-08-31T10:57:21.669Z"
     },
     {
       "faq_id": "faq-043",
@@ -868,9 +868,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:12.078Z"
+      "checked_at": "2026-08-31T10:57:21.748Z"
     },
     {
       "faq_id": "faq-044",
@@ -888,9 +888,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:12.163Z"
+      "checked_at": "2026-08-31T10:57:21.856Z"
     },
     {
       "faq_id": "faq-045",
@@ -908,9 +908,9 @@
         "urls": [],
         "search_queries": [],
         "sources": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-3.6-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T10:10:12.243Z"
+      "checked_at": "2026-08-31T10:57:21.931Z"
     }
   ]
 }
