@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T06:57:21.469Z",
+  "updated_at": "2026-08-31T07:02:12.515Z",
   "total_queries": 5,
   "results": [
     {
@@ -9,11 +9,21 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "answer": null,
-        "urls": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "answer": "La **cybersécurité industrielle** (souvent associée à la sécurité des **OT** pour *Operational Technology*) désigne l'ensemble des pratiques, technologies et mesures destinées à protéger les systèmes informatiques qui contrôlent, surveillent et automatisent les processus physiques.\n\nContrairement à la cybersécurité informatique classique (IT), qui protège principalement des données et des réseaux de bureau, la cybersécurité industrielle protège des usines, des réseaux électriques, des centrales d'eau, des lignes de production ou des transports.\n\n---\n\n### 1. Pourquoi est-elle différente de la cybersécurité classique (IT) ?\n\nLa différence majeure réside dans les priorités :\n\n*   **En IT (Informatique de gestion) :** La priorité est la **confidentialité** des données (éviter le vol d'informations). Un serveur peut être redémarré en cas de problème.\n*   **En OT (Informatique industrielle) :** La priorité absolue est la **disponibilité** et la **sûreté physique** (éviter qu'une machine ne blesse un opérateur ou n'interrompe une chaîne de production). Le moindre arrêt d'urgence peut coûter des millions d'euros.\n\nLes équipements industriels sont composés de :\n*   **SCADA** (Supervisory Control and Data Acquisition) : Systèmes de contrôle et d'acquisition de données.\n*   **Automates programmables (API / PLC)** : Les \"cerveaux\" logiques qui commandent les machines.\n*   **Capteurs et actionneurs intelligents (IIoT)**.\n\n---\n\n### 2. Pourquoi est-elle devenue critique aujourd'hui ?\n\nPendant longtemps, les usines fonctionnaient en \"circuit fermé\" (réseaux isolés d'Internet). Aujourd'hui, avec l'**Industrie 4.0**, les réseaux industriels sont interconnectés avec le reste de l'entreprise et Internet pour optimiser la production, faire de la maintenance à distance ou analyser des données.\n\nCette ouverture a créé des failles exploitées par des cybercriminels (ex : rançongiciels bloquant des usines, attaques d'États contre des infrastructures critiques).\n\n---\n\n### 3. Normes et cadres de référence (Sources utiles)\n\nPour mettre en œuvre la cybersécurité industrielle, les entreprises s'appuient sur des standards stricts :\n\n*   **ISA/IEC 62443 :** La norme internationale de référence dédiée à la sécurité des systèmes d'automatisation et de commande industriels.\n    *   En savoir plus : [https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards)\n*   **ANSSI (France) :** L'Agence nationale de la sécurité des systèmes d'information propose des guides d'hygiène et de sécurisation spécifiques aux systèmes industriels.\n    *   Site officiel : [https://www.ssi.gouv.fr/](https://www.ssi.gouv.fr/)\n*   **Directive NIS 2 (Union Européenne) :** Législation européenne imposant des règles de cybersécurité renforcées aux infrastructures critiques et essentielles.\n    *   Information officielle : [https://digital-strategy.ec.europa.eu/fr/policies/nis2-directive](https://digital-strategy.ec.europa.eu/fr/policies/nis2-directive)\n\n---\n\n### 4. Entreprises et solutions leaders du secteur\n\nDe nombreuses entreprises spécialisées et géants des technologies proposent des outils de cartographie réseau, de détection d'intrusions et de protection adaptés à l'OT :\n\n**Éditeurs spécialisés en cybersécurité OT :**\n*   **Claroty :** Plateforme spécialisée dans la protection des environnements industriels et de santé.\n    *   Site : [https://claroty.com/](https://claroty.com/)\n*   **Nozomi Networks :** Outils de visibilité réseau et de détection des anomalies pour les réseaux OT et IoT.\n    *   Site : [https://www.nozominetworks.com/](https://www.nozominetworks.com/)\n*   **Dragos :** Solution axée sur la protection des infrastructures critiques et l'analyse des menaces industrielles.\n    *   Site : [https://www.dragos.com/](https://www.dragos.com/)\n*   **Armis :** Solution de sécurité sans agent pour la visibilité des équipements connectés (IT, OT, IoT).\n    *   Site : [https://www.armis.com/](https://www.armis.com/)\n\n**Grands acteurs industriels et informatiques :**\n*   **Siemens (Industrial Cybersecurity) :** Propose des architectures matériel et logiciel nativement sécurisées pour l'industrie.\n    *   Site : [https://www.siemens.com/global/en/products/automation/topic-areas/industrial-cybersecurity.html](https://www.siemens.com/global/en/products/automation/topic-areas/industrial-cybersecurity.html)\n*   **Schneider Electric :** Propose des services de conseil et des solutions de cybersécurité pour les équipements automatisés.\n    *   Site : [https://www.se.com/](https://www.se.com/)\n*   **Fortinet (OT Security) :** Propose des pare-feu (Firewalls) durcis et adaptés aux protocoles industriels (Modbus, Profinet, etc.).\n    *   Site : [https://www.fortinet.com/solutions/enterprise-key-possibilities/industrial-control-systems](https://www.fortinet.com/solutions/enterprise-key-possibilities/industrial-control-systems)",
+        "urls": [
+          "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+          "https://www.ssi.gouv.fr/",
+          "https://digital-strategy.ec.europa.eu/fr/policies/nis2-directive",
+          "https://claroty.com/",
+          "https://www.nozominetworks.com/",
+          "https://www.dragos.com/",
+          "https://www.armis.com/",
+          "https://www.siemens.com/global/en/products/automation/topic-areas/industrial-cybersecurity.html",
+          "https://www.se.com/",
+          "https://www.fortinet.com/solutions/enterprise-key-possibilities/industrial-control-systems"
+        ]
       },
-      "checked_at": "2026-08-31T06:57:21.050Z"
+      "checked_at": "2026-08-31T07:00:56.207Z"
     },
     {
       "faq_id": "faq-002",
@@ -22,11 +32,22 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "answer": null,
-        "urls": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "answer": "Choisir une solution de cybersécurité efficace ne se résume pas à acheter le logiciel le plus cher ou le plus populaire. Cela dépend avant tout de la taille de votre organisation, de votre secteur d'activité, de votre infrastructure informatique et de votre budget.\n\nVoici une démarche méthodique en **5 étapes** pour faire le bon choix, suivie de quelques recommandations de solutions et de ressources de référence.\n\n---\n\n### 1. Évaluer vos besoins et vos risques (L'Audit)\nAvant de chercher un outil, identifiez ce que vous devez protéger :\n* **Vos données sensibles :** Données clients, propriété intellectuelle, fichiers financiers.\n* **Vos équipements :** Ordinateurs, serveurs, téléphones mobiles (BYOD), objets connectés (IoT).\n* **Votre infrastructure :** Réseau local, serveurs sur site ou infrastructure Cloud (AWS, Azure, Google Cloud).\n* **Vos obligations légales :** Conformité au RGPD, à la directive européenne NIS 2, ou à des normes comme ISO 27001.\n\n### 2. Identifier le type de solution nécessaire\nSelon votre audit, vous aurez besoin d'une ou plusieurs briques de sécurité :\n* **EDR / Antivirus nouvelle génération :** Pour protéger les postes de travail et serveurs contre les malwares et ransomwares.\n* **Pare-feu (NGFW) & Sécurité Réseau :** Pour filtrer le trafic et bloquer les intrusions.\n* **Gestion des Identités et des Accès (IAM / MFA) :** Pour sécuriser les connexions des utilisateurs (authentification multifacteur).\n* **Protection Cloud (CASB / CSPM) :** Pour sécuriser vos applications SaaS et vos environnements Cloud.\n* **SIEM / XDR :** Pour centraliser la collecte des journaux (logs) et détecter les menaces complexes à l'échelle globale.\n\n### 3. Définir vos critères de sélection\n* **Facilité d'utilisation et de gestion :** Avez-vous une équipe informatique dédiée en interne ou devez-vous externaliser la gestion à un prestataire (MSSP) ?\n* **Compatibilité :** La solution s'intègre-t-elle facilement avec vos outils existants (ex: Microsoft 365, Google Workspace) ?\n* **Impact sur les performances :** L'outil ralentit-il les machines ou le réseau ?\n* **Modèle économique :** Abonnement par utilisateur/mois, coût par appareil, coûts cachés (formation, support).\n\n### 4. Tester avant de s'engager (POC - Proof of Concept)\nDemandez toujours une période d'essai (généralement 14 à 30 jours) ou une démonstration en conditions réelles. Testez le déploiement sur un échantillon d'utilisateurs et évaluez la réactivité du support client.\n\n---\n\n### Acteurs et solutions de référence sur le marché\n\nVoici une sélection d'éditeurs reconnus, classés par domaine d'expertise :\n\n#### Protection des terminaux (EDR / Antivirus)\n* **CrowdStrike Falcon :** Très performant pour les entreprises de toutes tailles, 100% cloud. ([crowdstrike.com](https://www.crowdstrike.com))\n* **SentinelOne :** Une excellente solution axée sur l'IA et l'automatisation de la réponse aux incidents. ([sentinelone.com](https://www.sentinelone.com))\n* **Bitdefender GravityZone :** Très complet et particulièrement adapté aux PME et ETI. ([bitdefender.fr](https://www.bitdefender.fr))\n* **Microsoft Defender for Endpoint :** Idéal si vous êtes déjà ancré dans l'écosystème Microsoft 365. ([microsoft.com/security](https://www.microsoft.com/security))\n\n#### Sécurité Réseau et Pare-feu (NGFW)\n* **Palo Alto Networks :** Le leader du marché pour les grandes entreprises et la sécurité Cloud. ([paloaltonetworks.com](https://www.paloaltonetworks.com))\n* **Fortinet (FortiGate) :** Excellent rapport qualité/prix, très populaire auprès des PME et grandes entreprises. ([fortinet.com](https://www.fortinet.com))\n\n#### Gestion des Accès et Identités (IAM / MFA)\n* **Okta :** Référence mondiale pour la gestion centralisée des identités et du Single Sign-On (SSO). ([okta.com](https://www.okta.com))\n\n#### Services gérés / Accompagnement (en France)\nSi vous souhaitez externaliser la gestion de votre sécurité :\n* **Orange Cyberdefense :** Leader européen des services de cybersécurité gérés. ([orangecyberdefense.com](https://www.orangecyberdefense.com))\n\n---\n\n### Sources et guides de confiance pour vous aider\n\nPour approfondir votre démarche et comparer objectivement les solutions, vous pouvez consulter :\n\n1. **L'ANSSI (Agence nationale de la sécurité des systèmes d'information) :** Propose des guides de bonnes pratiques et la liste des produits qualifiés/certifiés en France.  \n   👉 Source : [ssi.gouv.fr](https://www.ssi.gouv.fr)\n2. **Cybermalveillance.gouv.fr :** Plateforme gouvernementale proposant des diagnostics et un annuaire de prestataires labellisés (Expert Cyber) pour les PME et collectivités.  \n   👉 Source : [cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr)\n3. **Gartner (Magic Quadrant) :** Cabinet d'études mondial qui publie chaque année des comparatifs impartiaux sur les meilleurs éditeurs du marché (Endpoint Protection, Network Firewalls, etc.).  \n   👉 Source : [gartner.com](https://www.gartner.com)",
+        "urls": [
+          "https://www.crowdstrike.com",
+          "https://www.sentinelone.com",
+          "https://www.bitdefender.fr",
+          "https://www.microsoft.com/security",
+          "https://www.paloaltonetworks.com",
+          "https://www.fortinet.com",
+          "https://www.okta.com",
+          "https://www.orangecyberdefense.com",
+          "https://www.ssi.gouv.fr",
+          "https://www.cybermalveillance.gouv.fr",
+          "https://www.gartner.com"
+        ]
       },
-      "checked_at": "2026-08-31T06:57:21.156Z"
+      "checked_at": "2026-08-31T07:01:13.129Z"
     },
     {
       "faq_id": "faq-003",
@@ -35,11 +56,23 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "answer": null,
-        "urls": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "answer": "Un **SOC** (acronyme de **Security Operations Center**, ou *Centre d'Opérations de Sécurité* en français) est une unité centralisée au sein d'une organisation dédiée à la **surveillance, la détection, l'analyse et la réponse aux cybermenaces** en temps réel.\n\nOn peut le comparer à la « tour de contrôle » ou au « PC de sécurité » informatique d'une entreprise.\n\n---\n\n###  Comment fonctionne un SOC ?\n\nLe SOC s'appuie sur un triptyque fondamental : **des personnes, des processus et des technologies**.\n\n Sa mission se déroule généralement en 4 étapes :\n\n1. **Surveillance et collecte :** Le SOC centralise tous les journaux d'événements (*logs*) provenant des serveurs, ordinateurs, réseaux et applications de l'entreprise.\n2. **Détection et analyse :** Des analystes en cybersécurité, aidés par des outils automatisés, identifient les anomalies et les comportements suspects.\n3. **Réponse aux incidents :** En cas d'attaque avérée (ransomware, tentative d'intrusion, fuite de données), le SOC intervient immédiatement pour isoler les systèmes touchés et bloquer la menace.\n4. **Prévention et amélioration :** Le SOC analyse les attaques subies pour renforcer les défenses futures.\n\n---\n\n### 🛠️ Les technologies clés d'un SOC\n\nUn SOC utilise plusieurs outils logiciels indispensables :\n\n* **Le SIEM (*Security Information and Event Management*) :** L'outil central qui collecte et corréle les données de sécurité.\n  * *Exemples :* [Splunk](https://www.splunk.com), [Microsoft Sentinel](https://azure.microsoft.com/services/sentinel/), [Elastic Security](https://www.elastic.co/security).\n* **L'EDR (*Endpoint Detection and Response*) :** Détecte les menaces directement sur les postes de travail et les serveurs.\n  * *Exemples :* [CrowdStrike](https://www.crowdstrike.com), [SentinelOne](https://www.sentinelone.com), ou la solution française [HarfangLab](https://harfanglab.io).\n* **Le SOAR (*Security Orchestration, Automation and Response*) :** Permet d'automatiser la réponse à certaines alertes courantes.\n  * *Exemple :* [Cortex XSOAR](https://www.paloaltonetworks.com) par Palo Alto Networks.\n\n---\n\n### 🏢 Interne, Externe (MSSP) ou Hybride ?\n\nMonter un SOC en interne coûte cher et nécessite des experts rares. C'est pourquoi il existe plusieurs modèles :\n\n* **SOC Interne :** L'équipe et les outils appartiennent entièrement à l'entreprise (souvent réservé aux grands groupes ou ministères).\n* **SOC Externalisé (ou SOC-as-a-Service) :** Confier la surveillance 24/7 à un prestataire spécialisé (*MSSP - Managed Security Service Provider*).\n  * *Acteurs majeurs en France/Europe :* [Orange Cyberdefense](https://www.orangecyberdefense.com), [Eviden / Atos](https://eviden.com), [Thales](https://www.thalesgroup.com).\n* **SOC Hybride :** Les équipes internes gèrent la journée, et un prestataire externe prend le relais la nuit et les week-ends.\n\n---\n\n### 📚 Sources et ressources pour aller plus loin\n\n* **L'ANSSI** (*Agence nationale de la sécurité des systèmes d'information*) propose des guides méthodologiques pour construire ou choisir son SOC : [https://cyber.gouv.fr](https://cyber.gouv.fr)\n* **MITRE ATT&CK** : La base de connaissances mondiale sur les tactiques et techniques d'attaque utilisées par les pirates, très utilisée par les analystes SOC : [https://attack.mitre.org](https://attack.mitre.org)",
+        "urls": [
+          "https://www.splunk.com",
+          "https://azure.microsoft.com/services/sentinel/",
+          "https://www.elastic.co/security",
+          "https://www.crowdstrike.com",
+          "https://www.sentinelone.com",
+          "https://harfanglab.io",
+          "https://www.paloaltonetworks.com",
+          "https://www.orangecyberdefense.com",
+          "https://eviden.com",
+          "https://www.thalesgroup.com",
+          "https://cyber.gouv.fr",
+          "https://attack.mitre.org"
+        ]
       },
-      "checked_at": "2026-08-31T06:57:21.274Z"
+      "checked_at": "2026-08-31T07:01:23.093Z"
     },
     {
       "faq_id": "faq-004",
@@ -48,11 +81,19 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
-        "answer": null,
-        "urls": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "answer": "Le **Zero Trust** (ou « Confiance Zéro ») est un modèle de sécurité informatique fondé sur un principe simple : **« Ne jamais faire confiance, toujours vérifier »** (*Never trust, always verify*).\n\n### Pourquoi le Zero Trust a-t-il été créé ?\nDans le modèle de sécurité traditionnel (souvent comparé à un **château fort avec des douves**), on considérait que tout ce qui se trouvait à l'intérieur du réseau de l'entreprise était sûr, et que la menace venait uniquement de l'extérieur. \n\nAujourd'hui, avec le travail à distance, l'usage massif du Cloud, les appareils mobiles et l'accès depuis n'importe où, ce \"périmètre\" a disparu. De plus, si un piratage réussit à franchir la défense périphérique, un attaquant peut se déplacer librement à l'intérieur du réseau. Le Zero Trust répond à ce problème en supprimant la notion de « zone de confiance ».\n\n---\n\n### Les principes fondamentaux du Zero Trust\n\n1. **Vérification continue :** Chaque demande d'accès (utilisateur, appareil, application) doit être authentifiée, autorisée et chiffrée avant d'être accordée, et ce, de manière continue.\n2. **Principe du moindre privilège (Least Privilege Access) :** Un utilisateur n'a accès qu'aux ressources strictes dont il a besoin pour travailler, rien de plus.\n3. **Hypothèse de la violation (*Assume Breach*) :** Le système fonctionne comme si des attaquants étaient déjà présents dans le réseau. On limite donc les risques de déplacement latéral en segmentant fortement le réseau (micro-segmentation).\n4. **Contrôle du contexte :** L'accès dépend de l'identité de l'utilisateur, mais aussi de la santé de l'appareil utilisé, de sa localisation, de l'heure et du niveau de risque de la connexion.\n\n---\n\n### Principaux acteurs et solutions Zero Trust\n\nSi vous cherchez à mettre en œuvre une architecture Zero Trust ou à explorer des solutions concrètes, voici les acteurs majeurs du marché :\n\n* **Zscaler** (Pionnier du *Zero Trust Exchange* et du SASE) : [https://www.zscaler.com](https://www.zscaler.com)\n* **Cloudflare** (Propose la suite *Cloudflare One* pour sécuriser le travail hybride) : [https://www.cloudflare.com](https://www.cloudflare.com)\n* **Palo Alto Networks** (Plateforme *Prisma Access*) : [https://www.paloaltonetworks.com](https://www.paloaltonetworks.com)\n* **Microsoft** (Solutions intégrées via *Microsoft Entra* et l'écosystème Microsoft Security) : [https://www.microsoft.com/security](https://www.microsoft.com/security)\n* **Okta** (Spécialiste de la gestion des identités, pilier du Zero Trust) : [https://www.okta.com](https://www.okta.com)\n\n---\n\n### Sources et frameworks de référence\n\nPour approfondir le sujet via des publications officielles et académiques :\n\n* **Le NIST (National Institute of Standards and Technology) :** Il a publié le standard de référence mondial, le document *NIST SP 800-207 Zero Trust Architecture*. Vous pouvez consulter leurs travaux sur [https://www.nist.gov](https://www.nist.gov).\n* **Forrester Research :** C’est l'analyste John Kindervag (alors chez Forrester) qui a créé le concept de Zero Trust en 2010. Les publications de Forrester restent une référence : [https://www.forrester.com](https://www.forrester.com).\n* **L'ANSSI (Agence nationale de la sécurité des systèmes d'information - France) :** Propose des guides et recommandations pour la sécurisation des réseaux : [https://ssi.gouv.fr](https://ssi.gouv.fr).",
+        "urls": [
+          "https://www.zscaler.com",
+          "https://www.cloudflare.com",
+          "https://www.paloaltonetworks.com",
+          "https://www.microsoft.com/security",
+          "https://www.okta.com",
+          "https://www.nist.gov",
+          "https://www.forrester.com",
+          "https://ssi.gouv.fr"
+        ]
       },
-      "checked_at": "2026-08-31T06:57:21.374Z"
+      "checked_at": "2026-08-31T07:01:55.364Z"
     },
     {
       "faq_id": "faq-005",
@@ -61,11 +102,19 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "answer": null,
-        "urls": [],
-        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+        "answer": "La protection d’un système industriel (également appelé **OT** pour *Operational Technology*, ou **ICS/SCADA**) repose sur une stratégie de **défense en profondeur**. Contrairement aux systèmes informatiques traditionnels (IT) qui privilégient la confidentialité des données, les systèmes industriels privilégient la **disponibilité** et la **sécurité physique** des opérations.\n\nVoici les principales étapes et bonnes pratiques pour sécuriser un système d'information industriel :\n\n---\n\n### 1. Cartographier et inventorier les actifs\nIl est impossible de protéger ce qu'on ne voit pas. La première étape consiste à :\n* Identifier l'ensemble des équipements (automates programmables/API, IHM, capteurs, serveurs SCADA).\n* Connaître leurs versions de firmware, leurs vulnérabilités et leurs interconnexions.\n\n### 2. Segmenter le réseau (Modèle de Purdue)\nLa séparation stricte entre le réseau informatique d'entreprise (IT) et le réseau de production (OT) est cruciale pour éviter qu'un piratage de boîte mail n'impacte l'usine.\n* **Mettre en place des pare-feux (Firewalls) industriels.**\n* **Créer des zones et des conduits** (principe de la norme **IEC 62443**).\n* **Isoler les accès tiers** (télémaintenance des fournisseurs) dans une zone démilitarisée (DMZ).\n\n### 3. Sécuriser les accès et les identités\n* **Authentification forte (MFA) :** Recommandée pour tous les accès distants.\n* **Gestion des accès privilèges (PAM) :** Restreindre les droits des techniciens et prestataires au strict nécessaire (*Principe du moindre privilège*).\n* **Contrôler l'usage des supports amovibles :** Bloquer ou analyser scrupuleusement les clés USB avant insertion sur les stations de travail de l'usine.\n\n### 4. Superviser et détecter les anomalies en temps réel\nInstaller des sondes de détection passives spécifiques à l'OT capables de comprendre les protocoles industriels (Modbus, BACnet, Profinet, DNP3, etc.) afin d'alerter en cas de comportement anormal.\n\n### 5. Appliquer une politique de mise à jour (Patch Management) adaptée\nLa mise à jour des automates et logiciels industriels est délicate car elle exige souvent l'arrêt de la production. Il convient de :\n* Tester les correctifs dans un environnement virtuel ou de simulation avant déploiement.\n* Appliquer des mesures de compensation (ex: règles de pare-feu renforcées) si un équipement obsolète ne peut pas être mis à jour.\n\n---\n\n### Solutions et éditeurs spécialisés en cybersécurité OT\n\nPour mettre en œuvre ces protections, plusieurs acteurs du marché proposent des solutions logicielles et matérielles éprouvées :\n\n#### Détection et visibilité des réseaux OT\n* **Claroty** ([https://claroty.com](https://claroty.com)) : Plateforme complète de protection du réseau industriel et de gestion des actifs.\n* **Nozomi Networks** ([https://www.nozominetworks.com](https://www.nozominetworks.com)) : Spécialiste de la visibilité et de la détection d'intrusions pour l'OT et l'IoT industriel.\n* **Dragos** ([https://www.dragos.com](https://www.dragos.com)) : Solution dédiée à la réponse aux incidents et à la traque des menaces industrielles.\n\n#### Pare-feux et segmentation\n* **Fortinet** ([https://www.fortinet.com](https://www.fortinet.com)) : Propose la gamme *FortiGate*, incluant des pare-feux renforcés (ruggedized) conçus pour les environnements industriels difficiles.\n* **Palo Alto Networks** ([https://www.paloaltonetworks.com](https://www.paloaltonetworks.com)) : Propose une visibilité et une prévention des menaces intégrées pour les réseaux IT/OT.\n* **TXOne Networks** ([https://www.txone.com](https://www.txone.com)) : Filiale de Trend Micro spécialisée dans la protection des postes de travail et réseaux industriels.\n\n---\n\n### Guides officiels et normes de référence\n\nPour bâtir un programme de cybersécurité conforme aux exigences réglementaires (ex: directive européenne NIS 2), vous pouvez vous appuyer sur les ressources suivantes :\n\n* **ANSSI (France) :** L'Agence nationale de la sécurité des systèmes d'information propose des guides pratiques dédiés aux systèmes industriels.\n  * Site officiel : [https://ssi.gouv.fr](https://ssi.gouv.fr)\n* **CISA / ICS-CERT (États-Unis) :** Propose des alerte de sécurité, des outils d'évaluation et des recommandations pour les infrastructures critiques.\n  * Site officiel : [https://www.cisa.gov/topics/industrial-control-systems](https://www.cisa.gov/topics/industrial-control-systems)\n* **La norme IEC 62443 :** Le standard international majeur définissant les exigences de sécurité pour les systèmes d'automatisation et de commande industriels (ISA/IEC).",
+        "urls": [
+          "https://claroty.com",
+          "https://www.nozominetworks.com",
+          "https://www.dragos.com",
+          "https://www.fortinet.com",
+          "https://www.paloaltonetworks.com",
+          "https://www.txone.com",
+          "https://ssi.gouv.fr",
+          "https://www.cisa.gov/topics/industrial-control-systems"
+        ]
       },
-      "checked_at": "2026-08-31T06:57:21.469Z"
+      "checked_at": "2026-08-31T07:02:12.515Z"
     }
   ]
 }
