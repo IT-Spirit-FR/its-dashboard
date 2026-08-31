@@ -1,8 +1,16 @@
 {
-  "updated_at": "2026-08-31T09:26:46.401Z",
+  "updated_at": "2026-08-31T10:10:12.243Z",
+  "model": "gemini-2.5-flash",
+  "grounding": {
+    "provider": "Google Search",
+    "enabled": true
+  },
   "total_queries": 45,
   "it_spirit_mentions": 0,
   "ai_visibility_rate": 0,
+  "it_spirit_sources": [],
+  "top_sources": [],
+  "competitors": [],
   "results": [
     {
       "faq_id": "faq-001",
@@ -11,27 +19,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "Sage",
-          "Cegid"
-        ],
-        "competitor_count": 3,
-        "answer": "Un **DSO (Days Sales Outstanding)** ou **Délai Moyen de Paiement Clients (DMP)** de **65 jours** dans une PME ou ETI française est un indicateur critique. En France, la loi LME (Loi de Modernisation de l'Économie) plafonne en principe les délais de paiement à **60 jours nets ou 45 jours fin de mois**. Un DSO de 65 jours signifie donc que l'entreprise subit des retardataires structurels et un risque d'impayés qui pèse directement sur son besoin en fonds de roulement (BFR).\n\nVoici la méthode pas à pas pour piloter et réduire ce DSO de 65 à moins de 45-50 jours.\n\n---\n\n### 1. Diagnostiquer la cause des 65 jours (L'audit de la balance âgée)\n\nAvant de lancer des relances massives, il faut segmenter l'encours client via la **balance âgée** :\n*   **Les litiges non résolus (souvent 30 à 40 % du DSO) :** Erreurs de facturation, bon de commande manquant, marchandise non conforme.\n*   **Les \"mauvais payeurs\" ou clients en difficulté :** Nécessitent un traitement judiciaire ou un arbitrage crédit.\n*   **L'absence de relance préventive :** La facture est envoyée, mais personne ne s'assure qu'elle est bien reçue et validée avant l'échéance.\n\n---\n\n### 2. Structurer la gouvernance et le process \"Order-to-Cash\" (O2C)\n\nPour faire baisser durablement le DSO, l'effort doit être transversal (Finance + Commerce) :\n\n*   **Responsabiliser les commerciaux :** Conditionner une partie des commissions de la force de vente à l'encaissement effectif et non à la seule signature du devis.\n*   **Fixer des limites de crédit (Credit Limit) :** Évaluer la solvabilité des prospects en amont (via des outils de scoring).\n*   **Instaurer la relance préventive (J-8 avant échéance) :** Vérifier que la facture est intégrée dans le système du client (ex: Chorus Pro pour le secteur public ou les plateformes dématérialisées des grands comptes).\n\n---\n\n### 3. Digitaliser et automatiser le recouvrement\n\nLe suivi manuel sur Excel devient inefficace dès qu'une PME/ETI gère plusieurs centaines de factures par mois. L'intégration d'un logiciel dédié au suivi du poste client (*Cash Collection*) permet d'automatiser les scénarios de relance (e-mail, courrier, SMS, tâches d'appels).\n\n#### Principales solutions du marché par typologie d'entreprise :\n\n*   **Pour les PME :**\n    *   **[Upflow](https://upflow.io) :** Très adapté aux PME modernes et SaaS, s'intègre facilement aux outils comptables (QuickBooks, Xero, Stripe) et ERP.\n    *   **[LeanPay](https://www.leanpay.fr) :** Solution fluide centrée sur le suivi du DSO, la gestion des litiges et l'automatisation des relances pour PME.\n    *   **[Rubypayeur](https://rubypayeur.com) :** Allie scoring communautaire, relances amiables et signalement des retards de paiement.\n\n*   **Pour les ETI (volumétrie plus complexe et multi-filiales) :**\n    *   **[Aston iTrade Finance](https://www.astonitf.com) :** Plateforme spécialisée dans la relance, le relai d'assurance-crédit et le financement de factures pour ETI.\n    *   **[Sidetrade](https://www.sidetrade.com) (Aimie) :** Solution d'Order-to-Cash pilotée par IA pour les ETIs et grands groupes.\n    *   **[Esker](https://www.esker.fr) :** Suite complète de dématérialisation du cycle client et fournisseur.\n    *   **Alternative internationale :** **[HighRadius](https://www.highradius.com)** (très orienté ETI internationales et grands comptes).\n\n---\n\n### 4. Recourir au financement et à la couverture du risque (si besoin immédiat de cash)\n\nSi le DSO de 65 jours asphyxie la trésorerie à court terme :\n*   **L'Affacturage (Factoring) :** Cession des créances à un factor (ex: BNP Paribas Factor, Eurofactor, BPCE Factor). Permet d'obtenir le cash sous 24-48h, mais ne dispense pas d'assainir le process interne.\n*   **L'Assurance-crédit :** Proposée par des acteurs comme **Euler Hermes (Allianz Trade)**, **Coface** ou **Atradius**, elle protège l'entreprise contre le risque d'insolvabilité des clients.\n\n---\n\n### Synthèse du plan d'action opérationnel (Roadmap 90 jours)\n\n| Horizon | Actions clés | Objectif DSO |\n| :--- | :--- | :--- |\n| **Mois 1** | Nettoyer la balance âgée, solder les litiges bloquants > 90 jours, mettre en place une réunion hebdomadaire Cash Sales/Finance. | **65j → 60j** |\n| **Mois 2** | Déployer un outil de recouvrement (ex: Upflow, LeanPay ou Aston iTrade) connecté à l'ERP (Sage, Cegid, SAP). | **60j → 52j** |\n| **Mois 3** | Automatiser les scénarios de relance préventive (J-7) et curative (J+7, J+15, J+30), former l'équipe commerciale. | **52j → < 45j** |\n\n---\n\n### Sources et ressources complémentaires\n\n*   **[AFDCC (Association Française des Crédit Managers)](https://www.afdcc.com)** : Propose des formations, des fiches pratiques et des indicateurs de cadrage pour les professionnels du poste client.\n*   **[Bpifrance - Guide de gestion du BFR](https://www.bpifrance.fr)** : Conseils pratiques pour les PME sur le pilotage du besoin en fonds de roulement.\n*   **[DGCCRF - Réduction des délais de paiement](https://www.economie.gouv.fr/dgccrf)** : Informations réglementaires sur le cadre légal des délais de paiement en France et les sanctions encourues.",
-        "urls": [
-          "https://upflow.io",
-          "https://www.leanpay.fr",
-          "https://rubypayeur.com",
-          "https://www.astonitf.com",
-          "https://www.sidetrade.com",
-          "https://www.esker.fr",
-          "https://www.highradius.com",
-          "https://www.afdcc.com",
-          "https://www.bpifrance.fr",
-          "https://www.economie.gouv.fr/dgccrf"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:18:44.901Z"
+      "checked_at": "2026-08-31T10:10:07.926Z"
     },
     {
       "faq_id": "faq-002",
@@ -40,19 +39,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "Sage",
-          "Cegid",
-          "Divalto"
-        ],
-        "competitor_count": 3,
-        "answer": "**Oui, en partie.** La réponse exacte dépend de la distinction entre l'obligation de **recevoir** et l'obligation d'**émettre** des factures électroniques.\n\nPour une PME (Petite et Moyenne Entreprise), voici ce qui change exactement au 1er septembre 2026 :\n\n---\n\n### 1. Le calendrier officiel de la réforme\n\nLa loi de finances a réaménagé le calendrier du passage à la facturation électronique (e-invoicing et e-reporting) en B2B domestique (entre entreprises assujetties à la TVA en France) :\n\n* **1er septembre 2026 : Obligation de RÉCEPTION pour TOUTES les entreprises.**  \n  Dès cette date, votre PME doit être techniquement capable de **recevoir** des factures électroniques conformes. Vos grands fournisseurs (opérateurs télécoms, fournisseurs d'énergie, grandes entreprises, ETI) auront en effet l'obligation d'émettre au format électronique dès cette date.\n* **1er septembre 2027 : Obligation d'ÉMISSION pour les PME et TPE.**  \n  Votre PME aura jusqu'à cette date pour basculer l'ensemble de sa facturation client (émission) au format électronique légal (Factur-X, UBL, CII).\n\n---\n\n### 2. Que doit faire une PME d'ici le 1er septembre 2026 ?\n\nMême si l'émission ne devient obligatoire qu'en 2027, **une PME ne peut pas attendre 2027 sans rien faire**. D'ici le 1er septembre 2026, elle doit :\n\n1. **Choisir une solution d'acheminement :** Pour recevoir ses factures, la PME doit définir par quel canal elles vont transiter.\n2. **Mettre à jour ses logiciels comptables et de gestion (ERP/CRM) :** Vérifier que les outils existants sont compatibles avec les normes de la réforme.\n3. **Nettoyer sa base de données clients/fournisseurs :** S'assurer d'avoir les numéros de SIREN/SIRET et les adresses exactes de tous ses tiers.\n\n---\n\n### 3. Les solutions et acteurs du marché\n\nPour se conformer, les entreprises ont le choix entre plusieurs types de plateformes :\n\n* **Le Portail Public de Facturation (PPF) :** La plateforme gratuite de l'État (évolution du portail Chorus Pro), permettant la saisie ou le dépôt de factures et le traitement a minima.\n* **Les PDP (Plateformes de Dématérialisation Partenaires) :** Des plateformes privées immatriculées par l'État qui offrent des services avancés (automatisation, gestion des flux, relances, réconciliation bancaire).  \n  *Exemples d'éditeurs et acteurs positionnés sur ce marché :* **Cegid, Sage, Docaposte, Pennylane, Libeo, Basware, Esker, Divalto, Axonaut**.\n* **Les OD (Opérateurs de Dématérialisation) :** Des logiciels de gestion ou de comptabilité (ex: Tiime, Quickbooks, etc.) qui ne sont pas agréés PDP en direct mais se connectent au PPF ou à une PDP pour traiter les flux.\n\n---\n\n### En résumé\n\n| Date | Obligation pour la PME |\n| :--- | :--- |\n| **1er septembre 2026** | **Être prête à RECEVOIR** des factures électroniques (choix d'une plateforme obligatoire). |\n| **1er septembre 2027** | **Être prête à ÉMETTRE** toutes ses factures au format électronique. |\n\n---\n\n### Sources et liens utiles\n* **Ministère de l'Économie et des Finances :** [Passer à la facturation électronique](https://www.economie.gouv.fr/passer-facturation-electronique)\n* **Impots.gouv.fr :** [Dossier Facturation électronique entre entreprises](https://www.impots.gouv.fr/professionnel/iam-la-facturation-electronique)",
-        "urls": [
-          "https://www.economie.gouv.fr/passer-facturation-electronique",
-          "https://www.impots.gouv.fr/professionnel/iam-la-facturation-electronique"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:19:01.014Z"
+      "checked_at": "2026-08-31T10:10:08.039Z"
     },
     {
       "faq_id": "faq-003",
@@ -61,25 +59,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "Boyum IT",
-          "BEAS",
-          "Salesforce"
-        ],
-        "competitor_count": 5,
-        "answer": "La rentabilité (ou retour sur investissement – ROI) d'un add-on pour **SAP Business One (SAP B1)** dépend principalement du secteur d'activité de l'entreprise (négoce, industrie, services). Cependant, les add-ons les plus rentables sont ceux qui **réduisent les développements spécifiques coûteux**, **automatisent les tâches répétitives** ou **éliminent les erreurs de saisie**.\n\nVoici les add-ons SAP Business One reconnus comme offrant le meilleur ROI, classés par domaine fonctionnel :\n\n---\n\n### 1. Personnalisation et ergonomie (ROI Immédiat)\nCes outils permettent d'adapter le logiciel aux besoins des utilisateurs sans passer par du code sur-mesure (plus cher et complexe à maintenir).\n\n*   **B1 Usability Package (B1UP)** par *Boyum IT*\n    *   **Pourquoi c'est rentable :** C'est le standard du marché. Il permet de personnaliser l'interface, d'ajouter des règles de gestion, de créer des boutons et d'automatiser des flux sans développement spécifique. Il réduit drastiquement le coût global de possession (TCO) de SAP B1.\n    *   **Alternatives :** Développements SDK internes, *Coilme B1 Toolkit*.\n    *   **Site :** [boyum-solutions.com](https://www.boyum-solutions.com/solutions/b1-usability-package)\n\n---\n\n### 2. Gestion de la production et Industrie (ROI Opérationnel)\nPour les entreprises industrielles, l'add-on idéal réduit le gaspillage de matière première et optimise le temps des machines.\n\n*   **Beas Manufacturing** par *Boyum IT*\n    *   **Pourquoi c'est rentable :** Il apporte des fonctionnalités avancées de gestion de production (MRP II, ordonnancement, gestion des temps, calcul des coûts de revient réels). Il est particulièrement rentable pour les PME industrielles ayant des flux complexes.\n    *   **Concurrents / Alternatives :** *ProcessForce* par Computec (très fort dans l'industrie chimique/agroalimentaire), *Advanced Manufacturing* de Maringo.\n    *   **Site :** [boyum-solutions.com/solutions/beas-manufacturing](https://www.boyum-solutions.com/solutions/beas-manufacturing)\n\n---\n\n### 3. Gestion des entrepôts et Logistique / WMS (ROI Logistique)\nDans le secteur du négoce ou de la distribution, les erreurs de préparation de commandes coûtent très cher.\n\n*   **Produmex WMS** par *Boyum IT*\n    *   **Pourquoi c'est rentable :** Il automatise la gestion des stocks par codes-barres/RFID, la traçabilité des lots et la préparation de commandes. Le ROI se mesure par la baisse drastique des erreurs d'expédition et l'augmentation de la vitesse de préparation.\n    *   **Alternatives :** *LISA WMS* (Ndevr), *WMS Express*, ou des solutions tierces connectées comme *Kardex* ou *Pixi*.\n    *   **Site :** [boyum-solutions.com/solutions/produmex-wms](https://www.boyum-solutions.com/solutions/produmex-wms)\n\n---\n\n### 4. Automatisation des flux et Intégration (ROI Administratif)\nRelier SAP B1 à d'autres systèmes (sites web, CRM, banques) évite les doubles saisies.\n\n*   **BPA Platform** par *Codeless Platforms*\n    *   **Pourquoi c'est rentable :** Cet outil d'intégration (IPaaS/ETL) permet de connecter SAP B1 à n'importe quel logiciel (Shopify, Salesforce, transporteurs, banques) et d'automatiser l'envoi d'alertes ou de rapports.\n    *   **Alternatives :** *Jitterbit*, *Zapier / Make* (via l'API Service Layer de SAP), *Magic xpi*.\n    *   **Site :** [codelessplatforms.com](https://www.codelessplatforms.com/)\n\n---\n\n### 5. E-commerce B2B / B2C (ROI Chiffre d'affaires)\nUn portail client direct réduit la charge de travail des équipes commerciales tout en augmentant le volume de ventes.\n\n*   **Sana Commerce Cloud**\n    *   **Pourquoi c'est rentable :** Sana s'intègre nativement au cœur du système SAP B1 (les données de stock, prix spécifiques et clients sont lues en temps réel sans duplication). Les clients passent commande en toute autonomie.\n    *   **Alternatives :** *Magento (Adobe Commerce)* avec un connecteur, *Shopify Plus* combiné avec un middleware comme BPA Platform, *Pepperi* (axé sur la vente nomade B2B).\n    *   **Site :** [sana-commerce.com](https://www.sana-commerce.com/fr/)\n\n---\n\n### Comment mesurer le ROI de votre add-on SAP B1 ?\n\nAvant d'investir, il est conseillé de calculer la rentabilité selon trois axes :\n1.  **Gain de temps (ETP) :** Combien d'heures de saisie manuelle l'add-on va-t-il supprimer par mois ?\n2.  **Réduction des erreurs :** Quel est le coût actuel des erreurs de stock, de livraison ou de facturation ?\n3.  **Coût de maintenance :** Un add-on certifié SAP (présent sur le *SAP App Center*) évoluera plus facilement lors des mises à jour majeures de SAP B1 qu'un code spécifique développé par une agence.\n\n**Ressource complémentaire :**\nVous pouvez consulter le catalogue officiel des solutions certifiées sur le **[SAP Store](https://store.sap.com/)** en filtrant par le produit *SAP Business One*.",
-        "urls": [
-          "https://www.boyum-solutions.com/solutions/b1-usability-package",
-          "https://www.boyum-solutions.com/solutions/beas-manufacturing",
-          "https://www.boyum-solutions.com/solutions/produmex-wms",
-          "https://www.codelessplatforms.com/",
-          "https://www.sana-commerce.com/fr/",
-          "https://store.sap.com/"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:19:36.572Z"
+      "checked_at": "2026-08-31T10:10:08.144Z"
     },
     {
       "faq_id": "faq-004",
@@ -88,30 +79,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "NetSuite",
-          "Sage",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Odoo"
-        ],
-        "competitor_count": 8,
-        "answer": "En règle générale, **SAP Business One (SBO)** est conçu pour fonctionner de manière optimale et sans ralentissement pour des entreprises comptant entre **5 et 100 utilisateurs simultanés**. Cependant, avec une infrastructure bien dimensionnée, le système peut gérer jusqu'à **250 à 500 utilisateurs** sans perte de performance.\n\nLa capacité réelle dépend principalement de la **base de données utilisée**, de l'**architecture système** et du **volume de transactions**.\n\n---\n\n### 1. La différence clé : SAP HANA vs Microsoft SQL Server\n\nLe seuil de tolérance aux ralentissements varie fortement selon le moteur de base de données choisi :\n\n*   **SAP Business One version SAP HANA (Recommandé pour la montée en charge) :** \n    *   **Capacité :** 100 à 500+ utilisateurs.\n    *   **Pourquoi ?** SAP HANA utilise le calcul *in-memory* (traitement des données directement dans la mémoire vive). Les requêtes complexes, les bilans comptables et les calculs de MRP (planification des besoins en composants) s'exécutent quasi instantanément, même avec un grand nombre d'utilisateurs actifs.\n*   **SAP Business One version MS SQL Server :**\n    *   **Capacité :** Idéal jusqu'à 50 - 80 utilisateurs.\n    *   **Pourquoi ?** Bien que très stable, la version SQL peut commencer à montrer des lenteurs lors des pics de saisie simultanée ou lors de la génération de gros rapports analytiques au-delà de 100 utilisateurs.\n\n---\n\n### 2. Les facteurs qui provoquent des ralentissements (et comment les éviter)\n\nMême avec un nombre réduit d'utilisateurs, des ralentissements peuvent survenir si l'environnement est mal configuré. Les éléments critiques sont :\n\n1.  **Utilisateurs nommés vs utilisateurs simultanés :** Le système mesure l'impact sur la charge en fonction du nombre de personnes connectées **en même temps** et réalisant des actions lourdes (ex: facturation de masse, import de catalogues).\n2.  **Qualité des Add-ons et intégrations :** L'utilisation d'extensions tierces (spécifiques au secteur) mal optimisées ou utilisant d'anciennes API (comme la DI-API au lieu du *Service Layer* de HANA) est la cause numéro 1 des lenteurs observées.\n3.  **L'infrastructure (Cloud vs On-Premise) :** Un serveur hébergé dans le Cloud (AWS, Azure ou hébergeur spécialisé) avec une mémoire RAM suffisante pour HANA (minimum 64 Go à 256 Go selon la taille) garantit une fluidité constante.\n\n---\n\n### 3. Alternatives et évolutivité\n\nSi votre entreprise dépasse les limites de SAP Business One ou cherche d'autres options sur le marché des ERP pour PME/ETI :\n\n*   **Pour rester dans l'écosystème SAP (au-delà de 250-500 utilisateurs) :** La suite logique est la transition vers **[SAP S/4HANA Cloud](https://www.sap.com/france/products/erp/s4hana.html)**, conçu pour les grandes PME et les grands groupes.\n*   **Alternatives directes sur le marché des PME (20 à 250 utilisateurs) :**\n    *   **[Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/fr-fr/business-central/overview/)** : Le concurrent le plus direct, très fluide en environnement Native Cloud.\n    *   **[Oracle NetSuite](https://www.netsuite.com)** : ERP 100 % SaaS, très performant pour la montée en charge multi-filiales.\n    *   **[Odoo](https://www.odoo.com/fr_FR)** ou **[Sage 100](https://www.sage.com/fr-fr/produits/sage-100/)** : Solutions adaptées pour des besoins plus légers (généralement < 50 utilisateurs).\n\n---\n\n### Sources et références\n*   Documentation technique et dimensionnement SAP : [SAP Help Portal](https://help.sap.com/viewer/product/SAP_BUSINESS_ONE/)\n*   Présentation de la solution : [SAP Business One Overview](https://www.sap.com/france/products/erp/business-one.html)\n*   Comparatifs et retours d'expérience ERP : [Appvizer - Analyse SAP B1](https://www.appvizer.fr/editeurs/sap/sap-business-one)",
-        "urls": [
-          "https://www.sap.com/france/products/erp/s4hana.html",
-          "https://dynamics.microsoft.com/fr-fr/business-central/overview/",
-          "https://www.netsuite.com",
-          "https://www.odoo.com/fr_FR",
-          "https://www.sage.com/fr-fr/produits/sage-100/",
-          "https://help.sap.com/viewer/product/SAP_BUSINESS_ONE/",
-          "https://www.sap.com/france/products/erp/business-one.html",
-          "https://www.appvizer.fr/editeurs/sap/sap-business-one"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:20:30.692Z"
+      "checked_at": "2026-08-31T10:10:08.241Z"
     },
     {
       "faq_id": "faq-005",
@@ -120,25 +99,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "NetSuite",
-          "Sage",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Odoo"
-        ],
-        "competitor_count": 8,
-        "answer": "Le budget global à prévoir pour l'implémentation de **SAP Business One** dans une PME varie généralement entre **25 000 € et plus de 150 000 €** pour la première année. \n\nCette variation dépend principalement du mode de déploiement (Cloud ou On-Premise), du nombre d'utilisateurs, des développements spécifiques et du niveau d'accompagnement par l'intégrateur.\n\n---\n\n### 1. Décomposition des coûts d'un projet SAP Business One\n\nUn projet SAP Business One s'articule autour de quatre grands postes de dépense :\n\n#### A. Les Licences (selon le type d'utilisateur)\nSAP propose deux grands types d'utilisateurs (Professionnel ou Limité) et deux modes d'acquisition :\n\n*   **Mode Cloud / SaaS (Abonnement mensuel) :**\n    *   **Utilisateur Professionnel :** environ **90 € à 110 € / mois / utilisateur**.\n    *   **Utilisateur Limité** (Finance, CRM ou Logistique) : environ **45 € à 60 € / mois / utilisateur**.\n*   **Mode On-Premise (Achat de licence perpétuelle) :**\n    *   **Utilisateur Professionnel :** environ **2 500 € à 3 200 €** (achat unique).\n    *   **Utilisateur Limité :** environ **1 200 € à 1 600 €** (achat unique).\n    *   *À cela s'ajoute la maintenance annuelle obligatoire (environ 18 % à 22 % du prix des licences).*\n\n#### B. Les Services d'Intégration (Le cœur du budget)\nL'intégration est assurée par un partenaire certifié SAP. Le tarif journalier moyen (TJM) d'un consultant SAP Business One varie entre **900 € et 1 400 € / jour**.\n\nLe volume de jours dépend de la complexité du projet :\n*   **Paramétrage de base et cadrage :** 15 à 30 jours-homme.\n*   **Migration des données & Reprise de l'historique :** 5 à 15 jours-homme.\n*   **Formation des utilisateurs et accompagnement au changement :** 5 à 10 jours-homme.\n*   **Développements spécifiques / Add-ons :** Sur devis (selon besoins).\n\n#### C. L'Infrastructure et l'Hébergement\n*   **En Cloud (SaaS) :** L'hébergement (sur SAP HANA Cloud, AWS ou Azure) est généralement inclus dans le forfait d'abonnement ou facturé sous forme d'un forfait mensuel d'infrastructure (150 € à 500 € / mois).\n*   **On-Premise :** Prévoir l'achat ou la mise à niveau des serveurs locaux et la gestion des sauvegardes.\n\n---\n\n### 2. Estimations budgétaires par profil de PME (Année 1)\n\n| Taille / Complexité | Utilisateurs | Mode conseillé | Budget moyen estimé (Année 1) |\n| :--- | :--- | :--- | :--- |\n| **Petite PME (Standard)** | 5 à 10 | Cloud (SaaS) | **20 000 € – 40 000 €** |\n| **PME Moyenne (Processus mixtes)** | 10 à 25 | Cloud ou On-Premise | **45 000 € – 85 000 €** |\n| **PME Complexe / Industrie / Négoce** | 25 à 50+ | On-Premise ou Hybrid | **90 000 € – 180 000 €+** |\n\n---\n\n### 3. Principaux intégrateurs SAP Business One en France\n\nSAP commercialise Business One exclusivement via un réseau de partenaires certifiés (Value Added Resellers / VARs) :\n*   **TVH Consulting**\n*   **Viseo**\n*   **Be One Solutions** (pour les projets multinationaux/multi-sites)\n*   **Absys Cyborg**\n\n---\n\n### 4. Alternatives et Concurrents sur le marché PME\n\nSi vous comparez les offres ERP pour PME, voici les principales alternatives à SAP Business One :\n\n1.  **Microsoft Dynamics 365 Business Central :** Le concurrent le plus direct de SAP B1. Très bonne intégration avec l'écosystème Microsoft (Office 365, Power BI). *Budget similaire à SAP B1.*\n2.  **Odoo :** ERP open-source très populaire auprès des TPE/PME pour son ergonomie et sa flexibilité. *Budget généralement inférieur (15 000 € à 45 000 €).*\n3.  **Sage 100 / Sage XRP Flex :** Très implanté en France, particulièrement robuste sur la gestion comptable et financière.\n4.  **Oracle NetSuite :** ERP 100 % Cloud natif, adapté aux PME en forte croissance ou internationales, mais souvent plus coûteux.\n\n---\n\n### Sources et références\n*   [SAP Business One - Site Officiel SAP](https://www.sap.com/france/products/erp/business-one.html)\n*   [Guide des tarifs et fonctionnalités ERP - CXP / Teknowlogy](https://www.teknowlogy.com/)\n*   [Comparatif ERP PME - Appvizer France](https://www.appvizer.fr/magazine/comptabilite-gestion/erp/quel-erp-choisir-pme)",
-        "urls": [
-          "https://www.sap.com/france/products/erp/business-one.html",
-          "https://www.teknowlogy.com/",
-          "https://www.appvizer.fr/magazine/comptabilite-gestion/erp/quel-erp-choisir-pme"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:21:28.069Z"
+      "checked_at": "2026-08-31T10:10:08.372Z"
     },
     {
       "faq_id": "faq-006",
@@ -147,25 +119,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "NetSuite",
-          "Sage",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Odoo"
-        ],
-        "competitor_count": 8,
-        "answer": "En moyenne, les entreprises qui mettent en place ou optimisent **Oracle NetSuite** constatent une réduction mesurable de leur **DSO** (*Days Sales Outstanding* / Délai Moyen de Recouvrement) dans un délai de **30 à 90 jours** après le déploiement des fonctionnalités de gestion du poste client (*Accounts Receivable*).\n\nLes gains observés se traduisent généralement par une **réduction du DSO de 20 % à 50 %** (soit un gain moyen de 10 à 25 jours de trésorerie).\n\n---\n\n### En combien de temps les résultats apparaissent-ils ?\n\n* **0 à 30 jours :** Réduction immédiate des erreurs de facturation et élimination des retards d'envoi des factures grâce à l'automatisation dès la validation de la commande ou de la livraison.\n* **30 à 60 jours :** Premiers effets des relances automatisées (*Dunning Management*) et de l'accès des clients au portail libre-service.\n* **60 à 90 jours :** Stabilisation du nouveau DSO et identification précise des clients à risque via les tableaux de bord en temps réel.\n\n---\n\n### Exemples concrets d'entreprises et cas d'usage\n\n1. **MakeSpace (Stockage et services)**\n   * **Problématique :** Processus de facturation manuels et suivi difficile des impayés.\n   * **Résultat avec NetSuite :** Le DSO est passé d'environ **45 jours à moins de 30 jours** (soit une baisse de **33 %**) en l'espace de trois mois grâce à l'automatisation des prélèvements et aux rappels intelligents.\n\n2. **Camp Chef (Matériel Outdoor & E-commerce)**\n   * **Problématique :** Décalage entre la préparation des commandes et la facturation B2B.\n   * **Résultat avec NetSuite :** Réduction du DSO de **15 jours** dès le premier trimestre d'utilisation grâce à la réconciliation bancaire automatique et à la synchronisation des commandes en temps réel.\n\n3. **Shaw Academy / Entreprises SaaS & Abonnements**\n   * **Problématique :** Taux élevé de factures rejetées et d'échecs de paiement sur les abonnements.\n   * **Résultat avec NetSuite (SuiteBilling) :** Diminution des échecs de paiement de plus de **40 %** et réduction du DSO global de **12 jours** en moins de 60 jours grâce au retraitement automatique des cartes bancaires et aux notifications clients.\n\n---\n\n### Comment NetSuite parvient-il à réduire le DSO ?\n\nNetSuite agit sur plusieurs leviers clés du poste client :\n\n* **Facturation instantanée :** Génération et envoi automatiques des factures dès qu'un service est rendu ou qu'un produit est expédié.\n* **Relances automatisées (*Dunning Management*) :** Scénarios de relance personnalisés (email, courrier) basés sur l'ancienneté des créances (*Aging Schedule*).\n* **Portail client en libre-service :** Permet aux clients de consulter leurs factures et d'effectuer des paiements directement en ligne (carte, virement, prélèvement).\n* **Visibilité en temps réel :** Tableaux de bord permettant aux équipes financières de repérer immédiatement les comptes critiques avant qu'ils ne deviennent des créances douteuses.\n\n---\n\n### Alternatives et Concurrents\n\nSi NetSuite est l'un meilleurs ERP du marché pour la gestion financière des PME et ETI, d'autres solutions proposent des capacités similaires ou complémentaires :\n\n#### ERP concurrents :\n* **Sage Intacct :** Très performant sur l'automatisation financière et la réduction du DSO pour les entreprises de services et SaaS.\n* **SAP Business One / SAP S/4HANA Cloud :** Très robuste pour les entreprises industrielles et de grande taille.\n* **Microsoft Dynamics 365 Finance :** Solution modulaire pour les grands groupes avec de fortes capacités de gestion du poste client.\n* **Odoo :** Alternative open-source économique pour les petites et moyennes entreprises.\n\n#### Solutions spécialisées \"AR Automation\" (à connecter à un ERP) :\nSi un ERP en place ne suffit pas à optimiser le DSO, des logiciels dédiés au recouvrement se connectent à NetSuite ou à ses concurrents :\n* **Upflow** (très populaire pour les PME et entreprises tech)\n* **Esker** (très puissant pour l'automatisation du cycle client/fournisseur)\n* **HighRadius** (axé sur l'IA pour les grandes entreprises)\n* **Quadient (YayPay)** (automatisation intelligente du recouvrement)\n\n---\n\n### Sources et Références\n\n* Case studies & AR Management – Oracle NetSuite : [https://www.netsuite.com/portal/products/erp/financial-management/accounts-receivable.shtml](https://www.netsuite.com/portal/products/erp/financial-management/accounts-receivable.shtml)\n* NetSuite Business Guide sur le DSO : [https://www.netsuite.com/portal/resource/articles/financial-management/dso-days-sales-outstanding.shtml](https://www.netsuite.com/portal/resource/articles/financial-management/dso-days-sales-outstanding.shtml)\n* Etudes de cas clients NetSuite : [https://www.netsuite.com/portal/customers.shtml](https://www.netsuite.com/portal/customers.shtml)",
-        "urls": [
-          "https://www.netsuite.com/portal/products/erp/financial-management/accounts-receivable.shtml",
-          "https://www.netsuite.com/portal/resource/articles/financial-management/dso-days-sales-outstanding.shtml",
-          "https://www.netsuite.com/portal/customers.shtml"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:22:24.444Z"
+      "checked_at": "2026-08-31T10:10:08.449Z"
     },
     {
       "faq_id": "faq-007",
@@ -174,25 +139,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "NetSuite",
-          "Sage",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Odoo"
-        ],
-        "competitor_count": 7,
-        "answer": "Le retour sur investissement (ROI) d'**Oracle NetSuite** varie selon la taille de l'entreprise, le secteur d'activité et la maturité des processus existants. Cependant, les études d'impact économique récentes et les données d'analyse pour **2025-2026** dégagent des tendances claires.\n\nEn moyenne, les entreprises qui déploient NetSuite constatent un **ROI situé entre 150 % et 350 % sur une période de 3 ans**, avec un délai de rentabilisation (*payback period*) généralement atteint entre **12 et 18 mois**.\n\n---\n\n### 1. Métriques et gains chiffrés réels (Horizon 2025-2026)\n\nL'intégration croissante de l'**IA générative native (NetSuite Text Enhance & Generative AI)** et des automatismes de workflow en 2025-2026 a permis d'accélérer le gain de productivité.\n\n* **Gestion financière & Clôture comptable :**\n  * **-40 % à -60 %** de temps passé sur la clôture mensuelle (ex. passage de 10 jours à 4 jours).\n  * Réduction des erreurs de saisie manuelle de plus de **70 %** grâce à la réconciliation bancaire et à la facturation automatisées par IA.\n* **Gestion des stocks & Supply Chain :**\n  * Réduction des coûts de stockage de **15 % à 30 %** grâce à une meilleure visibilité sur les prévisions de demande.\n  * Augmentation du taux de rotation des stocks de **20 % en moyenne**.\n* **Productivité IT & Infrastructures :**\n  * Réduction des coûts d'infrastructure IT de **30 % à 50 %** (élimination des serveurs sur site, des mises à niveau manuelles et de la maintenance lourde).\n* **Ventes et traitement des commandes :**\n  * Réduction du cycle de traitement des commandes de **40 % à 70 %**.\n\n---\n\n### 2. Données issues des études de référence\n\n* **Forrester Consulting (*Total Economic Impact™ - TEI*) :**\n  Les études TEI menées par Forrester sur les déploiements ERP Cloud d'Oracle NetSuite révèlent un **ROI moyen de 341 % sur 3 ans**, avec une valeur actuelle nette (VAN) positive dès la première année d'utilisation post-déploiement.\n* **Nucleus Research :**\n  Selon les analyses de Nucleus Research sur les ERP Cloud, NetSuite génère en moyenne **5,60 $ à 7,20 $ de retour pour chaque dollar investi**, principalement porté par l'automatisation de la prise de décision et l'unification des données (CRM + ERP + E-commerce).\n\n---\n\n### 3. Éléments qui influencent le ROI en 2025-2026\n\nLe ROI réel dépend fortement de plusieurs facteurs clés :\n1. **Le niveau d'adoption de l'IA native :** En 2025-2026, l'utilisation des fonctionnalités d'IA intégrées à Oracle Cloud Infrastructure (OCI) permet d'automatiser l'analyse prédictive du cash-flow et la rédaction des rapports sans surcoût de licence majeur.\n2. **La gestion du changement (*Change Management*) :** Un faible taux d'adoption par les équipes opérationnelles est la cause principale d'un ROI inférieur aux prévisions.\n3. **Le coût total de possession (TCO) :** NetSuite fonctionne sur un modèle d'abonnement SaaS (licence par utilisateur + modules). Les coûts d'implémentation initiaux (intégrateur/partenaire) représentent généralement 1 à 2 fois le coût annuel des licences.\n\n---\n\n### 4. Alternatives et Concurrents sur le marché\n\nSi vous évaluez NetSuite, il est pertinent de comparer son ROI potentiel avec celui de ses principaux concurrents sur le marché des ERP Cloud :\n\n* **Microsoft Dynamics 365 Business Central :** Souvent privilégié par les entreprises fortement ancrées dans l'écosystème Microsoft 365 (ROI très rapide pour les PME, mais parfois plus limité sur le multi-filiale complexe).\n* **SAP S/4HANA Cloud (Public Edition) :** Idéal pour les grandes entreprises ou les ETI industrielles aux processus très complexes. Le ROI prend souvent plus de temps à se concrétiser (18 à 30 mois) en raison de la lourdeur du projet, mais offre une profondeur fonctionnelle supérieure.\n* **Sage Intacct :** Alternative très performante centrée sur la gestion financière et comptable, particulièrement adaptée aux entreprises de services.\n* **Odoo (Enterprise) :** Solution modulaire très compétitive sur le plan tarifaire initial, attrayante pour les PME recherchant un ROI rapide avec un budget restreint.\n\n---\n\n### Sources et Références\n\n* **Forrester Research – Total Economic Impact of Oracle NetSuite :** [forrester.com](https://www.forrester.com)\n* **Nucleus Research – ERP Value Matrix & ROI Reports :** [nucleusresearch.com](https://nucleusresearch.com)\n* **Gartner – Magic Quadrant for Cloud ERP for Service-Centric/Product-Centric Enterprises :** [gartner.com](https://www.gartner.com)\n* **Oracle NetSuite Customer Success Durability Reports :** [netsuite.com](https://www.netsuite.com)",
-        "urls": [
-          "https://www.forrester.com",
-          "https://nucleusresearch.com",
-          "https://www.gartner.com",
-          "https://www.netsuite.com"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:23:30.213Z"
+      "checked_at": "2026-08-31T10:10:08.595Z"
     },
     {
       "faq_id": "faq-008",
@@ -201,13 +159,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:23:56.666Z"
+      "checked_at": "2026-08-31T10:10:08.675Z"
     },
     {
       "faq_id": "faq-009",
@@ -216,22 +179,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "Sage",
-          "Boyum IT",
-          "BEAS"
-        ],
-        "competitor_count": 5,
-        "answer": "Le choix entre **Boyum IT** (principalement via son add-on phare, le *B1 Usability Package* ou *B1UP*) et le **développement natif** (via le SDK SAP ou le Service Layer) dépend de la nature de votre besoin, de votre budget et de votre vision à long terme pour votre ERP SAP Business One.\n\nVoici une analyse comparative détaillée pour vous aider à trancher.\n\n---\n\n### 1. Présentation des deux approches\n\n#### **Option A : Boyum IT (B1 Usability Package / B1UP)**\n[Boyum IT Solutions](https://www.boyum-it.com) est le principal éditeur d'add-ons pour SAP Business One. Son outil principal, **B1UP**, est une plateforme \"Low-code / No-code\" intégrée à SAP B1. Elle permet d'adapter l'interface, de créer des règles de gestion, d'automatiser des flux de travail et d'ajouter des boutons ou des validations sans écrire de lignes de code complexes.\n\n*   **Philosophie :** Paramétrage visuel, rapidité et standardisation.\n\n#### **Option B : Développement natif SAP (SDK / Service Layer)**\nLe développement spécifique natif consiste à créer des fonctionnalités sur-mesure en utilisant les outils fournis par SAP : le **SDK** (UI API et DI API) ou le **Service Layer** (architecture REST moderne pour SAP B1 version for SAP HANA et SQL).\n\n*   **Philosophie :** Sur-mesure total, codage en C# / .NET ou SAPUI5 pour répondre à des processus métier uniques.\n\n---\n\n### 2. Tableau comparatif des critères clés\n\n| Critère | Boyum IT (B1UP) | Développement Natif (SDK / Service Layer) |\n| :--- | :--- | :--- |\n| **Délai de mise en œuvre** | **Très rapide** (quelques heures ou jours de paramétrage). | **Lent à moyen** (analyse, codage, tests, recette). |\n| **Coût initial (CAPEX)** | **Faible** (paramétrage rapide par un consultant). | **Élevé** (jours d'ingénierie et de développement). |\n| **Coût récurrent (OPEX)** | **Moyen** (abonnement annuel aux licences Boyum IT). | **Faible à moyen** (maintenance applicative, correctifs lors des MAJ). |\n| **Complexité technique** | Accessible aux consultants fonctionnels et administrateurs internes. | Nécessite un développeur spécialisé (C#, REST API, SQL/HANA). |\n| **Mises à jour SAP B1** | **Garanties** : Boyum maintient ses add-ons compatibles avec chaque version de SAP. | **Risque technique** : Nécessite souvent de retester/modifier le code lors des montées de version. |\n| **Limites fonctionnelles** | Limité aux fonctionnalités prévues par l'outil (bien que très vastes). | **Aucune limite** : Réalisation exacte de votre cahier des charges. |\n\n---\n\n### 3. Quand choisir Boyum IT ?\n\nOptez pour **Boyum IT** dans 80 % des cas d'amélioration du quotidien :\n1.  **Personnalisation de l'interface :** Masquer des champs, rendre des champs obligatoires, ajouter des onglets, créer des règles de validation contextuelles.\n2.  **Automation simple :** Générer automatiquement un document (ex: créer une livraison dès qu'une commande est validée).\n3.  **Gestion documentaire :** Créer des boutons d'impression rapide ou d'envoi automatique de factures par e-mail (via *Boyum B1 Print & Delivery*).\n4.  **Agilité :** Vous souhaitez faire évoluer votre ERP rapidement sans dépendre d'une équipe de développeurs.\n\n---\n\n### 4. Quand choisir le développement natif ?\n\nOptez pour le **développement natif** si vos besoins dépassent le cadre du standard :\n1.  **Processus métier ultra-spécifique :** Vous avez un algorithme de calcul de prix complexe ou un métier très particulier non couvert par le standard SAP.\n2.  **Intégration poussée avec des tiers :** Connexion bidirectionnelle temps réel avec des machines industrielles (IoT), des WMS sur-mesure ou des plateformes e-commerce complexes via le *Service Layer*.\n3.  **Interfaces utilisateur externes :** Développer des applications web ou mobiles dédiées (ex: application sur tablette pour techniciens) connectées à SAP B1 via l'API REST.\n\n---\n\n### 5. Alternatives et écosystème\n\nSi vous explorez les options d’extension pour SAP Business One, d'autres solutions et éditeurs existent sur le marché :\n\n*   **Pour la gestion de production avancée :** *Beas Manufacturing* (qui appartient aussi à Boyum IT) ou *BuildIt*.\n*   **Pour les interventions terrain / FSM :** *Coresystems* (solution d'extension très répandue dans l'écosystème SAP).\n*   **Pour l'intégration inter-systèmes :** Le framework natif **SAP B1iSN / B1iF** (Integration Framework) ou des outils IPaaS tiers (comme Make ou Celigo) couplés au Service Layer.\n\n---\n\n### En résumé : Que choisir ?\n\n*   **Choisissez Boyum IT** si vous voulez de la **flexibilité, des délais courts et une maintenance simplifiée** lors des mises à jour de SAP Business One. C'est le choix recommandé pour la majorité des améliorations ergonomiques et fonctionnelles.\n*   **Choisissez le développement natif** si votre besoin constitue votre **cœur de métier ou un avantage concurrentiel unique** qu'aucun add-on du marché ne peut exécuter.\n\nPour consulter la documentation officielle ou trouver des cas d'usage :\n*   Site officiel de Boyum IT : [boyum-solutions.com](https://www.boyum-solutions.com)\n*   Documentation technique SAP B1 SDK & Service Layer : [SAP Help Portal - SAP Business One](https://help.sap.com/docs/SAP_BUSINESSONE)",
-        "urls": [
-          "https://www.boyum-it.com",
-          "https://www.boyum-solutions.com",
-          "https://help.sap.com/docs/SAP_BUSINESSONE"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:24:39.972Z"
+      "checked_at": "2026-08-31T10:10:08.810Z"
     },
     {
       "faq_id": "faq-010",
@@ -240,13 +199,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 19.962731858s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"19s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:24:40.033Z"
+      "checked_at": "2026-08-31T10:10:08.896Z"
     },
     {
       "faq_id": "faq-011",
@@ -255,13 +219,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 19.890881532s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"19s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:24:40.105Z"
+      "checked_at": "2026-08-31T10:10:09.011Z"
     },
     {
       "faq_id": "faq-012",
@@ -270,13 +239,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 19.826302996s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"19s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:24:40.170Z"
+      "checked_at": "2026-08-31T10:10:09.090Z"
     },
     {
       "faq_id": "faq-013",
@@ -285,13 +259,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 19.77422471s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"19s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:24:40.226Z"
+      "checked_at": "2026-08-31T10:10:09.193Z"
     },
     {
       "faq_id": "faq-014",
@@ -300,13 +279,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 19.717739441s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"19s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:24:40.277Z"
+      "checked_at": "2026-08-31T10:10:09.273Z"
     },
     {
       "faq_id": "faq-015",
@@ -315,27 +299,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "NetSuite",
-          "Sage",
-          "Sage X3",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Acumatica",
-          "Odoo"
-        ],
-        "competitor_count": 10,
-        "answer": "**Non, SAP HANA n'est pas obligatoire pour SAP Business One en 2025.** \n\nMême si SAP encourage fortement la migration vers sa propre plateforme in-memory, **SAP Business One (version 10.0)** continue de fonctionner et d'être officiellement supporté sur deux bases de données distinctes :\n\n1. **Microsoft SQL Server** (version traditionnelle)\n2. **SAP HANA** (version in-memory)\n\n---\n\n### 1. La situation en 2025 : SQL Server vs SAP HANA\n\n* **SAP Business One sur MS SQL Server :** Reste une option très populaire pour les PME cherchant une infrastructure éprouvée, des coûts de licence/serveur souvent plus abordables et une maintenance informatique simplifiée.\n* **SAP Business One version for SAP HANA :** C'est la version mise en avant par l'éditeur. Elle offre des performances accrues pour les gros volumes de données, des fonctionnalités d'analyse décisionnelle (BI) en temps réel, la recherche de type \"Google-like\" (Enterprise Search) et une intégration poussée avec le *Web Client* de SAP.\n\n> **Attention à la confusion :** La restriction d'obligation concerne **SAP S/4HANA** (l'ERP pour grandes entreprises), qui exige obligatoirement la base de données HANA. SAP Business One (dédié aux PME) conserve cette dualité d'architecture.\n\n---\n\n### 2. Pourquoi choisir (ou éviter) SAP HANA en 2025 ?\n\nBien que non obligatoire, le choix de la base de données impacte les fonctionnalités accessibles :\n\n* **Avantages de basculer sur HANA :** \n  * Accès aux dernières innovations (tableaux de bord interactifs, prévisions basées sur l'IA/Machine Learning).\n  * Optimisation du temps de traitement pour les calculs lourds (MRP, valorisation des stocks).\n  * Meilleure pérennité (la majorité des développements futurs de SAP ciblent la version HANA).\n* **Raisons de rester sur MS SQL Server :**\n  * Moindre exigence en mémoire RAM matérielle (coût d'infrastructure réduit).\n  * Compétences internes ou prestataires informatiques déjà formés sur l'environnement Microsoft.\n\n---\n\n### 3. Alternatives et ERP concurrents pour PME\n\nSi vous évaluez l'écosystème SAP Business One et ses contraintes de base de données, voici les principales alternatives du marché pour les PME/ETI :\n\n* **Microsoft Dynamics 365 Business Central :** Le concurrent direct, parfaitement intégré à l'écosystème Microsoft 365 et Azure (utilisant SQL Database en Cloud).\n* **Odoo :** Solution open-source populaire basée sur PostgreSQL, très modulable et économique.\n* **Sage 100 / Sage X3 :** Très implantés en France pour la gestion financière et industrielle.\n* **Oracle NetSuite / Acumatica :** ERP 100 % Cloud SaaS concurrents sur le segment Mid-Market.\n\n---\n\n### 4. Sources et liens utiles\n\nPour vérifier la compatibilité technique et les feuilles de route officielles (*Roadmaps*) de SAP :\n\n* **SAP Product Availability Matrix (PAM)** *(Identifiants SAP requis)* :  \n  [https://support.sap.com/pam](https://support.sap.com/pam)\n* **Documentation officielle SAP Business One (SAP Help Portal)** :  \n  [https://help.sap.com/docs/SAP_BUSINESS_ONE](https://help.sap.com/docs/SAP_BUSINESS_ONE)\n* **Communauté SAP Business One** :  \n  [https://community.sap.com/topics/business-one](https://community.sap.com/topics/business-one)",
-        "urls": [
-          "https://support.sap.com/pam",
-          "https://help.sap.com/docs/SAP_BUSINESS_ONE",
-          "https://community.sap.com/topics/business-one"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.262Z"
+      "checked_at": "2026-08-31T10:10:09.377Z"
     },
     {
       "faq_id": "faq-016",
@@ -344,13 +319,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.629932685s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"12s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.366Z"
+      "checked_at": "2026-08-31T10:10:09.456Z"
     },
     {
       "faq_id": "faq-017",
@@ -359,13 +339,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.563186668s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"12s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.432Z"
+      "checked_at": "2026-08-31T10:10:09.570Z"
     },
     {
       "faq_id": "faq-018",
@@ -374,13 +359,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.502640307s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"12s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.493Z"
+      "checked_at": "2026-08-31T10:10:09.646Z"
     },
     {
       "faq_id": "faq-019",
@@ -389,13 +379,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.454063829s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"12s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.542Z"
+      "checked_at": "2026-08-31T10:10:09.760Z"
     },
     {
       "faq_id": "faq-020",
@@ -404,13 +399,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.395547385s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"12s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.601Z"
+      "checked_at": "2026-08-31T10:10:09.850Z"
     },
     {
       "faq_id": "faq-021",
@@ -419,13 +419,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.349001705s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"12s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:25:47.646Z"
+      "checked_at": "2026-08-31T10:10:09.967Z"
     },
     {
       "faq_id": "faq-022",
@@ -434,24 +439,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "SAP Business One",
-          "NetSuite",
-          "Sage",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Odoo"
-        ],
-        "competitor_count": 8,
-        "answer": "Dans **SAP Business One** (la solution ERP de SAP dédiée aux PME), la différence principale entre une **licence Professionnelle** (Professional) et une **licence Limitée** (Limited) réside dans le **périmètre fonctionnel accessible** et le **coût d'acquisition**.\n\nVoici le détail comparatif de ces deux types de licences utilisateur :\n\n---\n\n### 1. La licence Professionnelle (Professional License)\nC'est la licence la plus complète. Elle offre un **accès illimité à l'ensemble des modules** et fonctionnalités du logiciel.\n\n* **Fonctionnalités accessibles :** Comptabilité et finance, gestion des ventes, achats, gestion des stocks, production, CRM, service client, gestion des données de base, ainsi que les fonctions d'administration du système (gestion des autorisations, paramétrage).\n* **Profils ciblés :** \n  * Dirigeants, responsables administratifs et financiers (DAF).\n  * Administrateurs système et chefs de projets ERP.\n  * Employés polyvalents devant intervenir sur plusieurs étapes de la chaîne de valeur.\n\n---\n\n### 2. La licence Limitée (Limited License)\nCette licence est conçue pour les utilisateurs ayant des tâches ciblées ou spécialisées. Elle restreint l'accès à un domaine fonctionnel précis et est nettement moins coûteuse.\n\nSAP Business One décline généralement la licence Limitée en **3 profils principaux** :\n\n1. **Limited CRM (Gestion de la Relation Client) :**\n   * *Accès :* Opportunités commerciales, devis, commandes de vente, gestion des contacts et suivi des activités.\n   * *Profils :* Commercial, chargé de compte, téléprospecteur.\n2. **Limited Financial (Finance) :**\n   * *Accès :* Saisie d'écritures comptables, gestion des règlements, rapprochements bancaires, rapports financiers de base.\n   * *Profils :* Comptables, aides-comptables, contrôleurs de gestion.\n3. **Limited Logistics (Logistique) :**\n   * *Accès :* Gestion des commandes d'achat, réceptions de marchandises, livraisons, mouvements de stocks, suivi des ordres de fabrication simple.\n   * *Profils :* Magasiniers, responsables des achats, gestionnaires de stock.\n\n---\n\n### Tableau récapitulatif des différences\n\n| Critère | Licence Professionnelle | Licence Limitée |\n| :--- | :--- | :--- |\n| **Accès aux modules** | Total et transversal | Restreint à un domaine (CRM, Finance ou Logistique) |\n| **Droits d'administration** | Oui (Paramétrage, sécurité, droits) | Non |\n| **Profil utilisateur** | Décideur, Admin, Utilisateur clé | Opérationnel spécialisé |\n| **Prix relatif** | Élevé (Plein tarif) | Modéré (Environ 50 % à 60 % du prix Pro) |\n\n---\n\n### Bonnes pratiques d'optimisation (Licensing)\nLa plupart des entreprises qui déploient SAP Business One adoptent une **approche mixte** pour optimiser le coût total de possession (TCO) :\n* 15 à 20 % de licences Professionnelles pour les administrateurs et managers.\n* 80 % de licences Limitées réparties selon les besoins métier (commerciaux, magasiniers, comptables).\n\n---\n\n### Alternatives et concurrents sur le marché ERP PME\n\nSi vous évaluez les modèles de licences ERP pour PME, d'autres éditeurs proposent des découpages similaires (Full Users vs Light/Task Users) :\n\n* **Microsoft Dynamics 365 Business Central** (Licences *Full User / Essential/Premium* vs *Team Member*).\n* **NetSuite (Oracle)** (Licences basées sur des rôles spécifiques et accès employés).\n* **Odoo** (Licences par utilisateur avec choix des applications à la carte).\n* **Sage 100** (Licences modulaires ou par profils utilisateur).\n\n---\n\n### Sources & Documentation\n* Documentation officielle SAP Business One : [SAP Help Portal - SAP Business One](https://help.sap.com/docs/SAP_BUSINESS_ONE)\n* Site officiel SAP Business One : [SAP.com - Business One](https://www.sap.com/products/erp/business-one.html)",
-        "urls": [
-          "https://help.sap.com/docs/SAP_BUSINESS_ONE",
-          "https://www.sap.com/products/erp/business-one.html"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:00.021Z"
+      "checked_at": "2026-08-31T10:10:10.036Z"
     },
     {
       "faq_id": "faq-023",
@@ -460,13 +459,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 59.912501007s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"59s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:00.084Z"
+      "checked_at": "2026-08-31T10:10:10.171Z"
     },
     {
       "faq_id": "faq-024",
@@ -475,13 +479,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 59.864817724s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"59s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:00.131Z"
+      "checked_at": "2026-08-31T10:10:10.233Z"
     },
     {
       "faq_id": "faq-025",
@@ -490,13 +499,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 59.819091834s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"59s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:00.176Z"
+      "checked_at": "2026-08-31T10:10:10.359Z"
     },
     {
       "faq_id": "faq-026",
@@ -505,13 +519,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 59.756595445s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"59s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:00.239Z"
+      "checked_at": "2026-08-31T10:10:10.428Z"
     },
     {
       "faq_id": "faq-027",
@@ -520,25 +539,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
-        "competitors": [
-          "SAP",
-          "NetSuite",
-          "Sage",
-          "Microsoft Dynamics",
-          "Microsoft Dynamics 365",
-          "Oracle",
-          "Acumatica",
-          "Odoo"
-        ],
-        "competitor_count": 8,
-        "answer": "Il n’existe pas de taille unique définie uniquement par le nombre de salariés, car le choix de passer à **Oracle NetSuite** dépend principalement de la **complexité des opérations** et du **chiffre d'affaires**. \n\nCependant, dans la majorité des cas, NetSuite est conçu pour les entreprises en forte croissance, les PME consolidées et les ETI (Entreprises de Taille Intermédiaire).\n\nVoici les repères clés pour savoir si votre entreprise a la taille adéquate pour adopter NetSuite :\n\n---\n\n### 1. Les seuils de taille et de chiffre d'affaires\n\n* **Chiffre d'affaires (CA) :** À partir de **5 à 10 millions d'euros** de CA annuel. C'est le seuil à partir duquel l'investissement dans NetSuite devient rentable. Le cœur de cible (*sweet spot*) de la solution se situe entre **10 M€ et 200 M€** de CA.\n* **Nombre d'utilisateurs / salariés :** En général, à partir de **30 à 50 employés** (ou au moins 10 à 15 utilisateurs actifs du logiciel). En dessous de 20 salariés, la solution est souvent surdimensionnée, sauf en cas de hypercroissance ou de structure multi-filiales internationale.\n\n---\n\n### 2. Les indicateurs de complexité (plus importants que la taille)\n\nMême si une entreprise fait 5 M€ de CA, elle peut avoir besoin de NetSuite si elle rencontre les situations suivantes :\n* **Multi-filiales et International :** L'entreprise gère plusieurs entités juridiques, plusieurs devises, des devises de consolidation et des normes comptables locales différentes.\n* **Modèles économiques complexes :** Gestion d'abonnements (SaaS), facturation récurrente, gestion avancée des stocks (multi-entrepôts) ou chaînes logistiques complexes.\n* **Préparation à une levée de fonds ou une IPO :** Besoins de contrôles internes stricts, d’auditabilité et de reporting financier aux normes internationales (IFRS / US GAAP).\n* **Limites des outils existants :** L'entreprise utilise une constellation de logiciels non intégrés (ex: QuickBooks + Excel + CRM séparé) qui créent des silos de données.\n\n---\n\n### 3. Comment se positionne NetSuite face à ses concurrents ?\n\nLe marché des ERP s'organise généralement par niveau de maturité d'entreprise :\n\n#### À remplacer avant de passer à NetSuite (TPE / Petites PME) :\n* **QuickBooks / Xero / Sage 50 :** Excellents pour débuter (< 5 M€ de CA), mais atteignent vite leurs limites sur la gestion des stocks et la consolidation.\n* **Odoo :** Une alternative open-source très populaire pour les PME (de 5 à 50 employés) cherchant de la flexibilité à moindre coût initial.\n\n#### Les concurrents directs de NetSuite (Mid-Market / ETI) :\n* **Microsoft Dynamics 365 Business Central :** Le rival le plus direct de NetSuite, très prisé par les entreprises déjà ancrées dans l'écosystème Microsoft.\n* **Sage Intacct :** Très performant sur la partie financière et comptable, particulièrement pour les entreprises de services.\n* **SAP Business ByDesign / Acumatica :** Solutions Cloud concurrentes adaptées aux PME en croissance et aux entreprises industrielles/distributeurs.\n\n#### L'étage supérieur (Grands Comptes / Enterprise) :\n* **SAP S/4HANA** ou **Oracle Fusion Cloud ERP :** Destinés aux grands groupes multinationaux (> 500 M€ à plusieurs milliards de CA). NetSuite devient parfois trop limité pour ces structures gigantesques.\n\n---\n\n### Sources et références utiles :\n* **Oracle NetSuite Official Site :** Présentation des modules et cibles d'entreprises – [netsuite.com](https://www.netsuite.com)\n* **Gartner Magic Quadrant for Cloud ERP for Product-Centric Midmarket Enterprises :** Analyse comparative du marché des ERP Cloud – [gartner.com](https://www.gartner.com)\n* **Panorama Consulting Group :** Rapports annuels sur le déploiement des ERP et les seuils d'adoption par taille d'entreprise – [panorama-consulting.com](https://www.panorama-consulting.com)",
-        "urls": [
-          "https://www.netsuite.com",
-          "https://www.gartner.com",
-          "https://www.panorama-consulting.com"
-        ]
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
+        "competitors": [],
+        "competitor_count": 0,
+        "answer": null,
+        "urls": [],
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.090Z"
+      "checked_at": "2026-08-31T10:10:10.564Z"
     },
     {
       "faq_id": "faq-028",
@@ -547,13 +559,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.851751573s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.143Z"
+      "checked_at": "2026-08-31T10:10:10.639Z"
     },
     {
       "faq_id": "faq-029",
@@ -562,13 +579,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.641103796s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.356Z"
+      "checked_at": "2026-08-31T10:10:10.762Z"
     },
     {
       "faq_id": "faq-030",
@@ -577,13 +599,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.582314543s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.414Z"
+      "checked_at": "2026-08-31T10:10:10.835Z"
     },
     {
       "faq_id": "faq-031",
@@ -592,13 +619,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.474862741s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.529Z"
+      "checked_at": "2026-08-31T10:10:10.967Z"
     },
     {
       "faq_id": "faq-032",
@@ -607,13 +639,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.415001621s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.581Z"
+      "checked_at": "2026-08-31T10:10:11.028Z"
     },
     {
       "faq_id": "faq-033",
@@ -622,13 +659,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.366464746s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.629Z"
+      "checked_at": "2026-08-31T10:10:11.149Z"
     },
     {
       "faq_id": "faq-034",
@@ -637,13 +679,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.315886645s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.680Z"
+      "checked_at": "2026-08-31T10:10:11.219Z"
     },
     {
       "faq_id": "faq-035",
@@ -652,13 +699,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.271945667s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.723Z"
+      "checked_at": "2026-08-31T10:10:11.350Z"
     },
     {
       "faq_id": "faq-036",
@@ -667,13 +719,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.161068599s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.842Z"
+      "checked_at": "2026-08-31T10:10:11.423Z"
     },
     {
       "faq_id": "faq-037",
@@ -682,13 +739,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.106446838s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.889Z"
+      "checked_at": "2026-08-31T10:10:11.534Z"
     },
     {
       "faq_id": "faq-038",
@@ -697,13 +759,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 14.014748778s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:45.988Z"
+      "checked_at": "2026-08-31T10:10:11.647Z"
     },
     {
       "faq_id": "faq-039",
@@ -712,13 +779,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.959819589s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.037Z"
+      "checked_at": "2026-08-31T10:10:11.739Z"
     },
     {
       "faq_id": "faq-040",
@@ -727,13 +799,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.907346382s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.089Z"
+      "checked_at": "2026-08-31T10:10:11.822Z"
     },
     {
       "faq_id": "faq-041",
@@ -742,13 +819,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.850952734s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.144Z"
+      "checked_at": "2026-08-31T10:10:11.910Z"
     },
     {
       "faq_id": "faq-042",
@@ -757,13 +839,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.745191005s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.258Z"
+      "checked_at": "2026-08-31T10:10:11.994Z"
     },
     {
       "faq_id": "faq-043",
@@ -772,13 +859,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.693802063s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.302Z"
+      "checked_at": "2026-08-31T10:10:12.078Z"
     },
     {
       "faq_id": "faq-044",
@@ -787,13 +879,18 @@
       "priority": "high",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.644670421s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.6-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.351Z"
+      "checked_at": "2026-08-31T10:10:12.163Z"
     },
     {
       "faq_id": "faq-045",
@@ -802,13 +899,18 @@
       "priority": "medium",
       "gemini": {
         "mentioned": false,
+        "mention_type": "error",
+        "mentioned_in_answer": false,
+        "mentioned_in_sources": false,
         "competitors": [],
         "competitor_count": 0,
         "answer": null,
         "urls": [],
-        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.593942543s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.6-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"13s\"}]}}"
+        "search_queries": [],
+        "sources": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
       },
-      "checked_at": "2026-08-31T09:26:46.401Z"
+      "checked_at": "2026-08-31T10:10:12.243Z"
     }
   ]
 }
