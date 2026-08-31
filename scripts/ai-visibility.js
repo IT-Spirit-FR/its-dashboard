@@ -36,7 +36,7 @@ function detectItSpirit(text) {
 
 async function askGemini(question) {
   const response = await ai.models.generateContent({
-    model: "gemini-3.6-flash",
+    model: process.env.GEMINI_MODEL || "gemini-3.6-flash",
     contents: `
 Tu es un moteur de recherche répondant à la question d'un utilisateur.
 
