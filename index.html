@@ -1937,14 +1937,17 @@ if(kpi){
     </div>
   `;
 }
-      if(!data.length){
-        table.innerHTML = `
-          <div class="empty">
-            Aucune FAQ configurée.
-          </div>
-        `;
-        return;
-      }
+const json = await response.json();
+const data = json.queries || [];
+
+if (!data.length) {
+  table.innerHTML = `
+    <div class="empty">
+      Aucune FAQ configurée.
+    </div>
+  `;
+  return;
+}
 
       table.innerHTML = `
         <table style="width:100%;border-collapse:collapse">
