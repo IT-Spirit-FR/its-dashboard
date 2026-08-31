@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-08-31T11:28:33.263Z",
-  "model": "gemini-2.5-flash",
+  "model": "gemini-3.6-flash",
   "grounding": {
     "provider": "Google Search",
     "enabled": true
