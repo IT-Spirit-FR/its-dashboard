@@ -3,7 +3,9 @@ name: AI Visibility
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * 1"
+  - cron: "0 6 * * 1"
+  - cron: "0 6 * * 2"
+  - cron: "0 6 * * 3"
 
 permissions:
   contents: write
