@@ -1,12 +1,71 @@
 {
-  "updated_at": "$(date -u +%F)",
+  "updated_at": "2026-08-31T06:57:21.469Z",
+  "total_queries": 5,
   "results": [
     {
       "faq_id": "faq-001",
-      "google_ai": false,
-      "gemini": true,
-      "chatgpt": false,
-      "competitor": ""
+      "question": "Qu'est-ce que la cybersécurité industrielle ?",
+      "category": "Cybersécurité",
+      "priority": "high",
+      "gemini": {
+        "mentioned": false,
+        "answer": null,
+        "urls": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+      },
+      "checked_at": "2026-08-31T06:57:21.050Z"
+    },
+    {
+      "faq_id": "faq-002",
+      "question": "Comment choisir une solution de cybersécurité ?",
+      "category": "Cybersécurité",
+      "priority": "high",
+      "gemini": {
+        "mentioned": false,
+        "answer": null,
+        "urls": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+      },
+      "checked_at": "2026-08-31T06:57:21.156Z"
+    },
+    {
+      "faq_id": "faq-003",
+      "question": "Qu'est-ce qu'un SOC ?",
+      "category": "SOC",
+      "priority": "high",
+      "gemini": {
+        "mentioned": false,
+        "answer": null,
+        "urls": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+      },
+      "checked_at": "2026-08-31T06:57:21.274Z"
+    },
+    {
+      "faq_id": "faq-004",
+      "question": "Qu'est-ce que le Zero Trust ?",
+      "category": "Cybersécurité",
+      "priority": "medium",
+      "gemini": {
+        "mentioned": false,
+        "answer": null,
+        "urls": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+      },
+      "checked_at": "2026-08-31T06:57:21.374Z"
+    },
+    {
+      "faq_id": "faq-005",
+      "question": "Comment protéger un système industriel contre les cyberattaques ?",
+      "category": "Cybersécurité industrielle",
+      "priority": "high",
+      "gemini": {
+        "mentioned": false,
+        "answer": null,
+        "urls": [],
+        "error": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\"status\":\"NOT_FOUND\"}}"
+      },
+      "checked_at": "2026-08-31T06:57:21.469Z"
     }
   ]
 }
