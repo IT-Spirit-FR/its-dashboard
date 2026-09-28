@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T10:53:41.811Z",
+  "updated_at": "2026-09-28T13:25:39.586Z",
   "model": "gemini-3.6-flash",
   "grounding": {
     "provider": "Google Search",
@@ -30,7 +30,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.109Z"
+      "checked_at": "2026-09-28T13:25:37.765Z"
     },
     {
       "faq_id": "faq-002",
@@ -50,7 +50,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.204Z"
+      "checked_at": "2026-09-28T13:25:37.914Z"
     },
     {
       "faq_id": "faq-003",
@@ -70,7 +70,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.317Z"
+      "checked_at": "2026-09-28T13:25:38.042Z"
     },
     {
       "faq_id": "faq-004",
@@ -90,7 +90,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.421Z"
+      "checked_at": "2026-09-28T13:25:38.165Z"
     },
     {
       "faq_id": "faq-005",
@@ -110,7 +110,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.530Z"
+      "checked_at": "2026-09-28T13:25:38.294Z"
     },
     {
       "faq_id": "faq-006",
@@ -130,7 +130,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.621Z"
+      "checked_at": "2026-09-28T13:25:38.405Z"
     },
     {
       "faq_id": "faq-007",
@@ -150,7 +150,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.730Z"
+      "checked_at": "2026-09-28T13:25:38.532Z"
     },
     {
       "faq_id": "faq-008",
@@ -170,7 +170,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.815Z"
+      "checked_at": "2026-09-28T13:25:38.645Z"
     },
     {
       "faq_id": "faq-009",
@@ -190,7 +190,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:44.931Z"
+      "checked_at": "2026-09-28T13:25:38.772Z"
     },
     {
       "faq_id": "faq-010",
@@ -210,7 +210,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:45.019Z"
+      "checked_at": "2026-09-28T13:25:38.897Z"
     },
     {
       "faq_id": "faq-011",
@@ -230,7 +230,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:45.118Z"
+      "checked_at": "2026-09-28T13:25:39.007Z"
     },
     {
       "faq_id": "faq-012",
@@ -250,7 +250,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:45.233Z"
+      "checked_at": "2026-09-28T13:25:39.119Z"
     },
     {
       "faq_id": "faq-013",
@@ -270,7 +270,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:45.331Z"
+      "checked_at": "2026-09-28T13:25:39.345Z"
     },
     {
       "faq_id": "faq-014",
@@ -290,7 +290,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:45.438Z"
+      "checked_at": "2026-09-28T13:25:39.454Z"
     },
     {
       "faq_id": "faq-015",
@@ -310,7 +310,7 @@
         "sources": [],
         "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
       },
-      "checked_at": "2026-09-21T12:27:45.535Z"
+      "checked_at": "2026-09-28T13:25:39.569Z"
     },
     {
       "faq_id": "faq-016",
